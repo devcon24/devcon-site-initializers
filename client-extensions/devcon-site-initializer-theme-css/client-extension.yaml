@@ -1,0 +1,5 @@
+devcon-site-initializer-theme-css:
+    clayURL: css/clay.css
+    mainURL: css/main.css
+    name: DevCon Site Initializer Theme CSS
+    type: themeCSS

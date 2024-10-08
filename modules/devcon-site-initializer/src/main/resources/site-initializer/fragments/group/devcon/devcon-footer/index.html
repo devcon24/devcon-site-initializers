@@ -1,0 +1,50 @@
+<div class="devcon-footer">
+	<div class="container devcon-footer__container">
+		<div class="devcon-footer__top d-flex justify-content-between align-items-center">
+			<!-- Logo  -->
+			<div class="devcon-footer__logo">
+				<a class="" href="/web${themeDisplay.scopeGroup.friendlyURL}">
+					<img src="[resources:devcon-footer-logo.png]" alt="DevCon Logo"
+						 data-lfr-editable-type="image"
+						 data-lfr-editable-id="devcon-logo"
+					/>
+				</a>
+			</div>
+			<!-- Navigation -->
+			<div class="devcon-footer__navigation">
+				[#assign footerNavigationPreferences = freeMarkerPortletPreferences.getPreferences({
+					"displayStyle": "ddmTemplate_DEVCON_FOOTER_MENU"
+				})
+				/]
+				[@liferay_portlet["runtime"]
+					defaultPreferences=footerNavigationPreferences
+					portletName="com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+				/]
+			</div>
+			<!-- Social -->
+			<div class="devcon-footer__social">
+				<lfr-drop-zone data-lfr-drop-zone-id="social-links"></lfr-drop-zone>
+			</div>
+		</div>
+		<div class="devcon-footer__bottom d-flex justify-content-between align-items-center">
+			<!-- Navigation -->
+			<div class="devcon-footer__copyright">
+				<p data-lfr-editable-id="devcon-footer-copyright"
+				   data-lfr-editable-type="text">
+					Powered By Liferay | © 2024 Liferay Inc. All Rights Reserved
+				</p>
+			</div>
+			<!-- Language Selector -->
+			<div class="devcon-footer__language-selector">
+				[#assign languagePreferences = freeMarkerPortletPreferences.getPreferences({
+					"displayStyle": "ddmTemplate_DEVCON_LANGUAGE_SELECTOR"
+					})
+				/]
+				[@liferay_portlet["runtime"]
+					defaultPreferences=languagePreferences
+					portletName="com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet"
+				/]
+            </div>
+		</div>
+	</div>
+</div>

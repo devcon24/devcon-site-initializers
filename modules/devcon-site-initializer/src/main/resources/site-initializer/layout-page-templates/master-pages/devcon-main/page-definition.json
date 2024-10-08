@@ -1,0 +1,173 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"fragment": {
+						"key": "devcon-header",
+						"siteKey": "DevCon 2024"
+					},
+					"fragmentConfig": {
+						"headerType": "primary"
+					},
+					"fragmentFields": [
+						{
+							"id": "devcon-registration-link",
+							"value": {
+								"fragmentLink": {
+									"value": {
+										"href": {
+											"value": "#"
+										}
+									}
+								}
+							}
+						},
+						{
+							"id": "devcon-logo",
+							"value": {
+								"fragmentImage": {
+									"url": {
+										"value_i18n": {}
+									}
+								},
+								"fragmentLink": {}
+							}
+						}
+					],
+					"indexed": true,
+					"widgetInstances": [
+						{
+							"widgetConfig": {
+								"displayStyle": "ddmTemplate_DEVCON_HEADER_MENU"
+							},
+							"widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+						}
+					]
+				},
+				"type": "Fragment"
+			},
+			{
+				"definition": {
+					"fragmentSettings": {
+						"unallowedFragments": []
+					}
+				},
+				"type": "DropZone"
+			},
+			{
+				"definition": {
+					"fragment": {
+						"key": "devcon-footer",
+						"siteKey": "DevCon 2024"
+					},
+					"fragmentConfig": {},
+					"fragmentFields": [
+						{
+							"id": "devcon-footer-copyright",
+							"value": {
+								"fragmentLink": {}
+							}
+						},
+						{
+							"id": "devcon-logo",
+							"value": {
+								"fragmentImage": {
+									"url": {
+										"value_i18n": {}
+									}
+								},
+								"fragmentLink": {}
+							}
+						}
+					],
+					"indexed": true,
+					"widgetInstances": [
+						{
+							"widgetConfig": {
+								"displayStyle": "ddmTemplate_DEVCON_LANGUAGE_SELECTOR"
+							},
+							"widgetName": "com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet"
+						}
+					]
+				},
+				"pageElements": [
+					{
+						"definition": {
+							"fragmentDropZoneId": "social-links"
+						},
+						"pageElements": [
+							{
+								"definition": {
+									"fragment": {
+										"key": "BASIC_COMPONENT-social"
+									},
+									"fragmentConfig": {},
+									"fragmentFields": [
+										{
+											"id": "03-img",
+											"value": {
+												"fragmentImage": {
+													"url": {
+														"value_i18n": {}
+													}
+												},
+												"fragmentLink": {}
+											}
+										},
+										{
+											"id": "01-img",
+											"value": {
+												"fragmentImage": {
+													"url": {
+														"value_i18n": {}
+													}
+												},
+												"fragmentLink": {}
+											}
+										},
+										{
+											"id": "02-img",
+											"value": {
+												"fragmentImage": {
+													"url": {
+														"value_i18n": {}
+													}
+												},
+												"fragmentLink": {}
+											}
+										}
+									],
+									"indexed": true
+								},
+								"type": "Fragment"
+							}
+						],
+						"type": "FragmentDropZone"
+					}
+				],
+				"type": "Fragment"
+			}
+		],
+		"type": "Root"
+	},
+	"settings": {
+		"colorSchemeName": "01",
+		"styleBook": {
+			"key": "devcon",
+			"name": "DevCon Stylebook"
+		},
+		"themeCSSClientExtension": {
+			"externalReferenceCode": "LXC:devcon-site-initializer-theme-css",
+			"name": "DevCon Site Initializer Theme CSS"
+		},
+		"themeName": "Dialect",
+		"themeSettings": {
+			"lfr-theme:regular:show-header-search": "false",
+			"lfr-theme:regular:show-header": "false",
+			"lfr-theme:regular:show-footer": "false",
+			"lfr-theme:regular:wrap-widget-page-content": "false"
+		}
+	},
+	"version": 1.1
+}

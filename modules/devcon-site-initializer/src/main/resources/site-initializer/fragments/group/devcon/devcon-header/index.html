@@ -1,0 +1,37 @@
+<div class="devcon-header">
+	<div class="container d-flex justify-content-between align-items-center">
+
+		<!-- Logo  -->
+		<div class="devcon-header__logo">
+			<a class="" href="/web${themeDisplay.scopeGroup.friendlyURL}">
+				<img src="[resources:devcon-header-logo.png]" alt="DevCon Logo"
+					 data-lfr-editable-type="image"
+					 data-lfr-editable-id="devcon-logo"
+				/>
+			</a>
+		</div>
+
+		[#if configuration.headerType == 'primary']
+			<!-- Navigation & Registration -->
+			<div class="d-flex p-1">
+				<div class="devcon-footer__navigation">
+					[#assign headerNavigationPreferences = freeMarkerPortletPreferences.getPreferences({
+						"displayStyle": "ddmTemplate_DEVCON_HEADER_MENU"
+					})
+					/]
+					[@liferay_portlet["runtime"]
+						defaultPreferences=headerNavigationPreferences
+						portletName="com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+					/]
+				</div>
+				<a data-lfr-editable-id="devcon-registration-link"
+				   data-lfr-editable-type="link"
+				   class="btn btn-primary devcon-header__button"
+				   href="#">
+					Register
+				</a>
+			</div>
+		[/#if]
+
+	</div>
+</div>

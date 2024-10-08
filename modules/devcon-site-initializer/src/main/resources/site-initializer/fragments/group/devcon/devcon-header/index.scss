@@ -1,0 +1,10 @@
+.devcon-header {
+  background-color: var(--brand-color-1);
+  display: flex;
+  min-height: 72px;
+  &__logo {
+    img {
+      max-width: 200px;
+    }
+  }
+}

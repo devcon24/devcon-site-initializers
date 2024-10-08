@@ -1,0 +1,52 @@
+[
+	{
+		"menuItems": [
+			{
+				"friendlyURL": "/agenda",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/faq",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/accommodation",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/speakers",
+				"privateLayout": false,
+				"type": "layout"
+			}
+		],
+		"name": "Header Navigation"
+	},
+	{
+		"menuItems": [
+			{
+				"friendlyURL": "/agenda",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/faq",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/accommodation",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/speakers",
+				"privateLayout": false,
+				"type": "layout"
+			}
+		],
+		"name": "Footer Navigation"
+	}
+]

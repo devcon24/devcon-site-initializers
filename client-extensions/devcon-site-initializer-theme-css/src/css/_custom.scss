@@ -1,0 +1,21 @@
+@import 'sassy-inputs/sass/main';
+
+#wrapper {
+
+	// StyleGuide
+	.btn {
+		padding: 0.5rem 1em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all 0.3s ease-in-out;
+		word-wrap: break-word;
+		font-size: 1rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		line-height: 24px;
+		cursor: pointer;
+		border-radius: 0;
+	}
+
+}
