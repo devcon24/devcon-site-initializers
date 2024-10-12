@@ -16,11 +16,12 @@
 			<div class="d-flex p-1">
 				<div class="devcon-footer__navigation">
 					[#assign headerNavigationPreferences = freeMarkerPortletPreferences.getPreferences({
-						"displayStyle": "ddmTemplate_DEVCON_HEADER_MENU"
+						"displayStyle": "ddmTemplate_DEVCON_HEADER_NAV"
 					})
 					/]
 					[@liferay_portlet["runtime"]
 						defaultPreferences=headerNavigationPreferences
+						instanceId="siteNavigationMenuPortlet_header"
 						portletName="com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
 					/]
 				</div>

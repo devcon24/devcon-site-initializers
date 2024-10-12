@@ -26,7 +26,7 @@
 				"type": "layout"
 			}
 		],
-		"name": "Header Navigation"
+		"name": "DevCon Header Navigation"
 	},
 	{
 		"menuItems": [
@@ -43,18 +43,12 @@
 				"type": "layout"
 			},
 			{
-				"friendlyURL": "/accommodation",
-				"externalReferenceCode": "devcon-footer-accommodation",
-				"privateLayout": false,
-				"type": "layout"
-			},
-			{
 				"friendlyURL": "/speakers",
 				"externalReferenceCode": "devcon-footer-speakers",
 				"privateLayout": false,
 				"type": "layout"
 			}
 		],
-		"name": "Footer Navigation"
+		"name": "DevCon Footer Navigation"
 	}
 ]

@@ -13,11 +13,12 @@
 			<!-- Navigation -->
 			<div class="devcon-footer__navigation">
 				[#assign footerNavigationPreferences = freeMarkerPortletPreferences.getPreferences({
-					"displayStyle": "ddmTemplate_DEVCON_FOOTER_MENU"
+					"displayStyle": "ddmTemplate_DEVCON_FOOTER_NAV"
 				})
 				/]
 				[@liferay_portlet["runtime"]
 					defaultPreferences=footerNavigationPreferences
+					instanceId="siteNavigationMenuPortlet_footer"
 					portletName="com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
 				/]
 			</div>
