@@ -49,7 +49,6 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
 
         ThemeDisplay themeDisplay = (ThemeDisplay) actionRequest.getAttribute(WebKeys.THEME_DISPLAY);
         long groupId = themeDisplay.getSiteGroupId();
-        long companyId = themeDisplay.getCompanyId();
 
         // ------ OnBeforeInitialize Customization
         if (isDevConSite(groupId)) {
@@ -70,6 +69,8 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
         // ------ OnAfterInitialize Customization
         if (isDevConSite(groupId)) {
             _log.info("SynchronizeSiteInitializerMVCActionCommand -> DevCon: After Synchronize Site Initializer");
+            // Save ThemeCSS CX for LayoutSet
+            siteInitializerService.verifyLayoutSetThemeCSSClientExtension(groupId);
             // Save siteNavigationMenuId to Portlet Preferences
             siteInitializerService.verifySiteNavigationMenuIds(groupId);
         }

@@ -1,44 +1,42 @@
 {
 
-	"brandColor1": {
-		"cssVariableMapping": "brand-color-1",
-		"value": "#16161E"
+
+	"colorBrandPrimaryLighten1": {
+		"cssVariableMapping": "color-brand-primary-lighten-1",
+		"value": "#FDCC4A"
 	},
-	"brandColor2": {
-		"cssVariableMapping": "brand-color-2",
-		"value": "#fdcc4a"
+	"colorBrandPrimary": {
+		"cssVariableMapping": "color-brand-primary",
+		"value": "#EBBD45"
 	},
-	"brandColor3": {
-		"cssVariableMapping": "brand-color-3",
-		"value": "#060E69"
-	},
-	"brandColor4": {
-		"cssVariableMapping": "brand-color-4",
-		"value": "#60236B"
+	"colorBrandPrimaryDarken1": {
+		"cssVariableMapping": "color-brand-primary-darken-1",
+		"value": "#D9AE40"
 	},
 
-	"btnPrimaryBackgroundColor": {
-		"cssVariableMapping": "btn-primary-background-color",
-		"value": "var(--brand-color-2)"
+	"colorNeutral10": {
+		"cssVariableMapping": "color-neutral-10",
+		"value": "#000000"
 	},
-	"btnPrimaryBorderColor": {
-		"cssVariableMapping": "btn-primary-border-color",
-		"value": "var(--brand-color-2)"
+	"colorNeutral9": {
+		"cssVariableMapping": "color-neutral-9",
+		"value": "#001C28"
 	},
-	"btnPrimaryColor": {
-		"cssVariableMapping": "btn-primary-color",
-		"value": "#003b56"
+	"colorNeutral8": {
+		"cssVariableMapping": "color-neutral-8",
+		"value": "#16161E"
 	},
-	"btnPrimaryHoverBackgroundColor": {
-		"cssVariableMapping": "btn-primary-hover-background-color",
-		"value": "#d9ae40"
+	"colorNeutral7": {
+		"cssVariableMapping": "color-neutral-7",
+		"value": "#3E464B"
 	},
-	"btnPrimaryHoverBorderColor": {
-		"cssVariableMapping": "btn-primary-hover-border-color",
-		"value": "#d9ae40"
+	"colorNeutral1": {
+		"cssVariableMapping": "color-neutral-1",
+		"value": "#F1F1F1"
 	},
-	"btnPrimaryHoverColor": {
-		"cssVariableMapping": "btn-primary-hover-color",
-		"value": "#003b56"
+	"colorNeutral0": {
+		"cssVariableMapping": "color-neutral-0",
+		"value": "#FFFFFF"
 	}
+
 }
