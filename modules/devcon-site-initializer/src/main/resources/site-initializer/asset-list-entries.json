@@ -1,7 +1,7 @@
 [
 	{
-		"assetEntrySubtypeId": "[$DDM_STRUCTURE_ID:SPONSOR]",
-		"title": "Sponsors List",
+		"assetEntrySubtypeId": "[$DDM_STRUCTURE_ID:SPONSOR$]",
+		"title": "Sponsors",
 		"unicodeProperties": {
 			"anyClassType": "anyClassTypeJournalArticleAssetRendererFactory",
 			"classNameIds": "com.liferay.journal.model.JournalArticle",
@@ -9,7 +9,7 @@
 			"orderBy": [
 				{
 					"key": "orderByColumn1",
-					"value": "sponsorType"
+					"value": "ddm__keyword__[$DDM_STRUCTURE_ID:SPONSOR$]__sponsorType"
 				},
 				{
 					"key": "orderByColumn2",

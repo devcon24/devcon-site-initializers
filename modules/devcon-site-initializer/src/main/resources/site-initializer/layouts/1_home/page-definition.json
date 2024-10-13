@@ -284,6 +284,160 @@
 													"indexed": true
 												},
 												"type": "Fragment"
+											},
+											{
+												"definition": {
+													"fragment": {
+														"key": "devcon-sponsors",
+														"siteKey": "[$GROUP_KEY$]"
+													},
+													"fragmentConfig": {},
+													"fragmentFields": [
+														{
+															"id": "devcon-sponsors-header",
+															"value": {
+																"fragmentLink": {}
+															}
+														}
+													],
+													"indexed": true
+												},
+												"pageElements": [
+													{
+														"definition": {
+															"fragmentDropZoneId": "devcon-sponsors-list"
+														},
+														"pageElements": [
+															{
+																"definition": {
+																	"collectionConfig": {
+																		"collectionReference": {
+																			"className": "com.liferay.asset.list.model.AssetListEntry",
+																			"classPK": "[#ASSET_LIST_ENTRY_ID:SPONSORS#]"
+																		},
+																		"collectionType": "Collection"
+																	},
+																	"collectionViewports": [
+																		{
+																			"collectionViewportDefinition": {
+																				"numberOfColumns": 1
+																			},
+																			"id": "landscapeMobile"
+																		},
+																		{
+																			"collectionViewportDefinition": {
+																				"numberOfColumns": 1
+																			},
+																			"id": "portraitMobile"
+																		},
+																		{
+																			"collectionViewportDefinition": {
+																				"numberOfColumns": 1
+																			},
+																			"id": "tablet"
+																		}
+																	],
+																	"displayAllItems": false,
+																	"displayAllPages": true,
+																	"layout": {
+																		"align": "Center",
+																		"justify": "SpaceAround"
+																	},
+																	"listItemStyle": "",
+																	"listStyle": "flex-row",
+																	"numberOfColumns": 1,
+																	"numberOfItems": 5,
+																	"numberOfItemsPerPage": 20,
+																	"numberOfPages": 5,
+																	"paginationType": "None",
+																	"showAllItems": false,
+																	"templateKey": ""
+																},
+																"pageElements": [
+																	{
+																		"definition": {
+																			"collectionItemConfig": {}
+																		},
+																		"pageElements": [
+																			{
+																				"definition": {
+																					"fragment": {
+																						"key": "devcon-sponsor-icon",
+																						"siteKey": "[$GROUP_KEY$]"
+																					},
+																					"fragmentConfig": {},
+																					"fragmentFields": [
+																						{
+																							"id": "sponsor-image",
+																							"value": {
+																								"fragmentImage": {
+																									"url": {
+																										"mapping": {
+																											"fieldKey": "DDMStructure_sponsorLogo",
+																											"itemReference": {
+																												"contextSource": "CollectionItem"
+																											}
+																										}
+																									}
+																								},
+																								"fragmentLink": {
+																									"value": {
+																										"href": {
+																											"mapping": {
+																												"fieldKey": "DDMStructure_sponsorLink",
+																												"itemReference": {
+																													"contextSource": "CollectionItem"
+																												}
+																											}
+																										},
+																										"target": "Blank"
+																									}
+																								}
+																							}
+																						},
+																						{
+																							"id": "sponsor-level",
+																							"value": {
+																								"fragmentLink": {
+																									"value": {
+																										"href": {
+																											"mapping": {
+																												"fieldKey": "DDMStructure_sponsorLink",
+																												"itemReference": {
+																													"contextSource": "CollectionItem"
+																												}
+																											}
+																										},
+																										"target": "Blank"
+																									}
+																								},
+																								"text": {
+																									"mapping": {
+																										"fieldKey": "DDMStructure_sponsorType",
+																										"itemReference": {
+																											"contextSource": "CollectionItem"
+																										}
+																									}
+																								}
+																							}
+																						}
+																					],
+																					"indexed": true
+																				},
+																				"id": "3cc20201-4964-3656-0bc2-3d681bc37886",
+																				"type": "Fragment"
+																			}
+																		],
+																		"type": "CollectionItem"
+																	}
+																],
+																"type": "Collection"
+															}
+														],
+														"type": "FragmentDropZone"
+													}
+												],
+												"type": "Fragment"
 											}
 										],
 										"type": "Section"

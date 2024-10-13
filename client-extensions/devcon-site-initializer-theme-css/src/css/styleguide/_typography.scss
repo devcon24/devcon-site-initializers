@@ -23,6 +23,10 @@ h1,h2,h3,p {
     color: var(--white) !important;
     -webkit-text-fill-color: var(--white) !important;
   }
+  &.text-primary {
+    color: var(--primaryStart) !important;
+    -webkit-text-fill-color: var(--primaryStart) !important;
+  }
 }
 
 .devcon-title {
