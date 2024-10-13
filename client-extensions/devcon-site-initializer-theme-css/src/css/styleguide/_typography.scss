@@ -18,7 +18,7 @@ h2 {
   font-weight: 600;
 }
 
-h1,h2,p {
+h1,h2,h3,p {
   &.text-white {
     color: var(--white) !important;
     -webkit-text-fill-color: var(--white) !important;
