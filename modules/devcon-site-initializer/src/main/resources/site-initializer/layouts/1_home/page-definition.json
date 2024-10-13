@@ -11,7 +11,7 @@
 						"definition": {
 							"fragment": {
 								"key": "devcon-homepage-wrapper",
-								"siteKey": "DevCon 2024"
+								"siteKey": "[$GROUP_KEY$]"
 							},
 							"fragmentConfig": {},
 							"fragmentFields": [],
@@ -35,7 +35,7 @@
 												"definition": {
 													"fragment": {
 														"key": "devcon-homepage-banner",
-														"siteKey": "DevCon 2024"
+														"siteKey": "[$GROUP_KEY$]"
 													},
 													"fragmentConfig": {},
 													"fragmentFields": [
@@ -78,7 +78,7 @@
 												"definition": {
 													"fragment": {
 														"key": "devcon-gallery",
-														"siteKey": "DevCon 2024"
+														"siteKey": "[$GROUP_KEY$]"
 													},
 													"fragmentConfig": {
 														"numberOfImages": 4
@@ -90,7 +90,7 @@
 																"fragmentLink": {},
 																"text": {
 																	"value_i18n": {
-																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/01.png$]"
+																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/gallery-01.png$]"
 																	}
 																}
 															}
@@ -101,7 +101,7 @@
 																"fragmentLink": {},
 																"text": {
 																	"value_i18n": {
-																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/02.png$]"
+																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/gallery-02.png$]"
 																	}
 																}
 															}
@@ -112,7 +112,7 @@
 																"fragmentLink": {},
 																"text": {
 																	"value_i18n": {
-																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/03.png$]"
+																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/gallery-03.png$]"
 																	}
 																}
 															}
@@ -123,9 +123,41 @@
 																"fragmentLink": {},
 																"text": {
 																	"value_i18n": {
-																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/04.png$]"
+																		"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Gallery/gallery-04.png$]"
 																	}
 																}
+															}
+														}
+													],
+													"indexed": true
+												},
+												"type": "Fragment"
+											},
+											{
+												"definition": {
+													"fragment": {
+														"key": "devcon-venue",
+														"siteKey": "[$GROUP_KEY$]"
+													},
+													"fragmentConfig": {
+													},
+													"fragmentFields": [
+														{
+															"id": "devcon-venue-image",
+															"value": {
+																"fragmentImage": {
+																	"description": {
+																		"value_i18n": {
+																			"en_US": ""
+																		}
+																	},
+																	"url": {
+																		"value_i18n": {
+																			"en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Venue/venue-01.png$]"
+																		}
+																	}
+																},
+																"fragmentLink": {}
 															}
 														}
 													],

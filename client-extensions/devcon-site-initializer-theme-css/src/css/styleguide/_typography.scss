@@ -10,7 +10,6 @@ h1 {
 h2 {
   background-image: linear-gradient(90deg, var(--primaryStart, var(--primary)), var(--primaryEnd, var(--primary)));
   color: var(--primaryStart, var(--primary));
-  display: inline-block;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.438rem;
@@ -21,7 +20,8 @@ h2 {
 
 h1,h2,p {
   &.text-white {
-    color: var(--white);
+    color: var(--white) !important;
+    -webkit-text-fill-color: var(--white) !important;
   }
 }
 
@@ -51,7 +51,6 @@ h1,h2,p {
 .devcon-text-small {
   background-image: linear-gradient(90deg, var(--whiteStart, var(--white)), var(--whiteEnd, var(--white)));
   color: var(--whiteStart, var(--white));
-  display: inline-block;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   box-sizing: border-box !important;

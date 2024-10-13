@@ -522,6 +522,19 @@
 							"type": "String"
 						},
 						{
+							"defaultValue": "#772B85",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-hover-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-hover-background-color"
+								}
+							],
+							"name": "btnSecondaryHoverBackgroundColor",
+							"type": "String"
+						},
+						{
 							"defaultValue": "#60236B",
 							"editorType": "ColorPicker",
 							"label": "cta-secondary-arrow-color",
