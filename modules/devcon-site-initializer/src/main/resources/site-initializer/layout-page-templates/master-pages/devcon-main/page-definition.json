@@ -10,8 +10,7 @@
 					{
 						"definition": {
 							"fragment": {
-								"key": "devcon-header",
-								"siteKey": "DevCon 2024"
+								"key": "devcon-header"
 							},
 							"fragmentConfig": {
 								"headerType": "primary"
@@ -65,8 +64,7 @@
 					{
 						"definition": {
 							"fragment": {
-								"key": "devcon-footer",
-								"siteKey": "DevCon 2024"
+								"key": "devcon-footer"
 							},
 							"fragmentConfig": {},
 							"fragmentFields": [
@@ -108,46 +106,86 @@
 									{
 										"definition": {
 											"fragment": {
-												"key": "BASIC_COMPONENT-social"
+												"key": "devcon-social-media"
 											},
 											"fragmentConfig": {},
 											"fragmentFields": [
 												{
-													"id": "03-img",
+													"id": "instagram-share-social-link",
 													"value": {
-														"fragmentImage": {
-															"url": {
-																"value_i18n": {}
+														"fragmentLink": {
+															"value": {
+																"href": {
+																	"value": "https://www.instagram.com/liferayinc/"
+																}
 															}
-														},
-														"fragmentLink": {}
+														}
 													}
 												},
 												{
-													"id": "01-img",
+													"id": "github-share-social-link",
 													"value": {
-														"fragmentImage": {
-															"url": {
-																"value_i18n": {}
+														"fragmentLink": {
+															"value": {
+																"href": {
+																	"value": "https://github.com/liferay"
+																}
 															}
-														},
-														"fragmentLink": {}
+														}
 													}
 												},
 												{
-													"id": "02-img",
+													"id": "twitter-share-social-link",
 													"value": {
-														"fragmentImage": {
-															"url": {
-																"value_i18n": {}
+														"fragmentLink": {
+															"value": {
+																"href": {
+																	"value": "https://twitter.com/Liferay"
+																}
 															}
-														},
-														"fragmentLink": {}
+														}
+													}
+												},
+												{
+													"id": "facebook-share-social-link",
+													"value": {
+														"fragmentLink": {
+															"value": {
+																"href": {
+																	"value": "https://www.facebook.com/liferay"
+																}
+															}
+														}
+													}
+												},
+												{
+													"id": "linkedin-share-social-link",
+													"value": {
+														"fragmentLink": {
+															"value": {
+																"href": {
+																	"value": "https://www.linkedin.com/company/liferay-inc-"
+																}
+															}
+														}
+													}
+												},
+												{
+													"id": "youtube-share-social-link",
+													"value": {
+														"fragmentLink": {
+															"value": {
+																"href": {
+																	"value": "https://www.youtube.com/liferay"
+																}
+															}
+														}
 													}
 												}
 											],
 											"indexed": true
 										},
+										"id": "0b0a4b84-63ad-b392-51e3-963d7ad4ed9a",
 										"type": "Fragment"
 									}
 								],

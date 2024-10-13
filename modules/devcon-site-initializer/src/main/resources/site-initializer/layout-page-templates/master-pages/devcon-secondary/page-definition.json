@@ -4,8 +4,7 @@
       {
         "definition": {
           "fragment": {
-            "key": "devcon-header",
-            "siteKey": "DevCon 2024"
+            "key": "devcon-header"
           },
           "fragmentConfig": {
             "headerType": "secondary"

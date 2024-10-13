@@ -1,5 +1,5 @@
 .devcon-header {
-  background-color: var(--color-neutral-8);
+  background-image: linear-gradient(90deg, var(--tertiaryStart), var(--tertiaryEnd));
   display: flex;
   min-height: 72px;
   &__logo {

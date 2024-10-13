@@ -3,7 +3,7 @@
 
 		<!-- Logo  -->
 		<div class="devcon-header__logo">
-			<a class="" href="/web${themeDisplay.scopeGroup.friendlyURL}">
+			<a href="/web${themeDisplay.scopeGroup.friendlyURL}">
 				<img src="[resources:devcon-header-logo.png]" alt="DevCon Logo"
 					 data-lfr-editable-type="image"
 					 data-lfr-editable-id="devcon-logo"
@@ -13,8 +13,8 @@
 
 		[#if configuration.headerType == 'primary']
 			<!-- Navigation & Registration -->
-			<div class="d-flex p-1">
-				<div class="devcon-footer__navigation">
+			<div class="d-flex p-1 align-items-center">
+				<div class="devcon-header__navigation">
 					[#assign headerNavigationPreferences = freeMarkerPortletPreferences.getPreferences({
 						"displayStyle": "ddmTemplate_DEVCON_HEADER_NAV"
 					})
@@ -28,7 +28,7 @@
 				<a data-lfr-editable-id="devcon-registration-link"
 				   data-lfr-editable-type="link"
 				   class="btn btn-primary devcon-header__button"
-				   href="#">
+				   href="/web${themeDisplay.scopeGroup.friendlyURL}/registration">
 					Register
 				</a>
 			</div>
