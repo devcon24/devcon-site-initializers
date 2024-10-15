@@ -1,6 +1,7 @@
 {
 	"object-entries": [
 		{
+			"externalReferenceCode": "BCHAN",
 			"firstName": "Brian",
 			"lastName": "Chan",
 			"position": "CEO",
@@ -8,6 +9,7 @@
 			"profileImage": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Speakers/b.chan.png#]"
 		},
 		{
+			"externalReferenceCode": "AJARDINE",
 			"firstName": "Andrew",
 			"lastName": "Jardine",
 			"position": "Lead Solution Architect",
@@ -15,6 +17,7 @@
 			"profileImage": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Speakers/a.jardine.png#]"
 		},
 		{
+			"externalReferenceCode": "DNEBINGER",
 			"firstName": "Dave",
 			"lastName": "Nebinger",
 			"position": "Lead Solution Architect",
@@ -22,6 +25,7 @@
 			"profileImage": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Speakers/d.nebinger.png#]"
 		},
 		{
+			"externalReferenceCode": "OKOCK",
 			"firstName": "Olaf",
 			"lastName": "Kock",
 			"position": "Principal Sales Engineer",
@@ -29,6 +33,7 @@
 			"profileImage": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Speakers/o.kock.png#]"
 		},
 		{
+			"externalReferenceCode": "BTURNER",
 			"firstName": "Ben",
 			"lastName": "Turner",
 			"position": "Senior Manager, Technical Enablement",
@@ -36,6 +41,7 @@
 			"profileImage": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Speakers/b.turner.png#]"
 		},
 		{
+			"externalReferenceCode": "VKOSHELENKO",
 			"firstName": "Vitaliy",
 			"lastName": "Koshelenko",
 			"position": "Liferay Architect",
