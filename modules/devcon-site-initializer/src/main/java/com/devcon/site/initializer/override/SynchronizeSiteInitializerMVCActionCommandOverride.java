@@ -73,6 +73,8 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
             siteInitializerService.verifyLayoutSetThemeCSSClientExtension(groupId);
             // Save siteNavigationMenuId to Portlet Preferences
             siteInitializerService.verifySiteNavigationMenuIds(groupId);
+            // Save mapping for Object Image Fields
+            siteInitializerService.verifyObjectImageFieldsMapping(groupId);
         }
 
     }

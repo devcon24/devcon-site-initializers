@@ -26,7 +26,7 @@
 				"type": "layout"
 			}
 		],
-		"name": "DevCon Header Navigation"
+		"name": "DEVCON_HEADER_NAV_MENU"
 	},
 	{
 		"menuItems": [
@@ -49,6 +49,6 @@
 				"type": "layout"
 			}
 		],
-		"name": "DevCon Footer Navigation"
+		"name": "DEVCON_FOOTER_NAV_MENU"
 	}
 ]

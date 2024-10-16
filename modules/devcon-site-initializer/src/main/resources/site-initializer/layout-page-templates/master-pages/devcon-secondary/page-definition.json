@@ -26,6 +26,7 @@
           "widgetInstances": [
             {
               "widgetConfig": {
+                "siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_HEADER_NAV_MENU$]",
                 "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV"
               },
               "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"

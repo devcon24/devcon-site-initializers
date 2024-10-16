@@ -5,6 +5,12 @@ import com.devcon.site.initializer.service.SiteInitializerService;
 import com.liferay.client.extension.model.ClientExtensionEntryRel;
 import com.liferay.client.extension.service.ClientExtensionEntryRelLocalService;
 import com.liferay.counter.kernel.service.CounterLocalService;
+import com.liferay.fragment.model.FragmentEntryLink;
+import com.liferay.fragment.service.FragmentEntryLinkLocalService;
+import com.liferay.object.model.ObjectDefinition;
+import com.liferay.object.model.ObjectField;
+import com.liferay.object.service.ObjectDefinitionLocalService;
+import com.liferay.object.service.ObjectFieldLocalService;
 import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.dao.orm.DynamicQuery;
 import com.liferay.portal.kernel.dao.orm.RestrictionsFactoryUtil;
@@ -25,20 +31,23 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Component(service = SiteInitializerService.class)
 public class SiteInitializerServiceImpl implements SiteInitializerService {
 
     public static final String HEADER_MENU_DDM_TEMPLATE_KEY = "DEVCON_HEADER_NAV";
-    public static final String HEADER_SITE_NAVIGATION_MENU_NAME = "DevCon Header Navigation";
+    public static final String HEADER_SITE_NAVIGATION_MENU_NAME = "DEVCON_HEADER_NAV_MENU";
 
     public static final String FOOTER_MENU_DDM_TEMPLATE_KEY = "DEVCON_FOOTER_NAV";
-    public static final String FOOTER_SITE_NAVIGATION_MENU_NAME = "DevCon Footer Navigation";
+    public static final String FOOTER_SITE_NAVIGATION_MENU_NAME = "DEVCON_FOOTER_NAV_MENU";
 
     public static final String CX_TYPE = "themeCSS";
     public static final String CX_EXTERNAL_REFERENCE_CODE = "LXC:devcon-site-initializer-theme-css";
 
-    // ---------------------------- Site Navigation Menu ----------------------------
+
+    // ---------------------------- Site Navigation Menu ---------------------------------------------------------------
 
     @Override
     public void verifySiteNavigationMenuIds(long groupId) {
@@ -128,6 +137,44 @@ public class SiteInitializerServiceImpl implements SiteInitializerService {
         }
     }
 
+    // ---------------------------- Fields Mapping for Object Image Fields ---------------------------------------------
+
+    @Override
+    public void verifyObjectImageFieldsMapping(long groupId) {
+        DynamicQuery dynamicQuery = fragmentEntryLinkLocalService.dynamicQuery();
+        dynamicQuery.add(RestrictionsFactoryUtil.like("editableValues", "%$OBJECT_FIELD:%"));
+        List<FragmentEntryLink> fragmentEntryLinks = fragmentEntryLinkLocalService.dynamicQuery(dynamicQuery);
+        Pattern objectFieldPlaceholderPattern = Pattern.compile("ObjectField_\\[\\$OBJECT_NAME:([a-zA-Z0-9]+)\\$]\\[\\$OBJECT_FIELD:([a-zA-Z0-9]+)\\$]#previewURL");
+        for (FragmentEntryLink fragmentEntryLink : fragmentEntryLinks) {
+            try {
+                String editableValues = fragmentEntryLink.getEditableValues();
+                Matcher matcher = objectFieldPlaceholderPattern.matcher(editableValues);
+                if (matcher.find()) {
+                    String externalReferenceCode = matcher.group(1);
+                    ObjectDefinition objectDefinition = objectDefinitionLocalService
+                            .fetchObjectDefinitionByExternalReferenceCode(externalReferenceCode, fragmentEntryLink.getCompanyId());
+                    if (objectDefinition == null) {
+                        _log.warn("ObjectDefinition not found, externalReferenceCode=" + externalReferenceCode);
+                        continue;
+                    }
+                    String objectFieldName = matcher.group(2);
+                    ObjectField objectField = objectFieldLocalService.fetchObjectField(objectDefinition.getObjectDefinitionId(), objectFieldName);
+                    if (objectField == null) {
+                        _log.warn("ObjectField not found, fieldName=" + objectFieldName);
+                        continue;
+                    }
+                    String replacementValue = "ObjectField_" + objectField.getObjectFieldId() + "#previewURL";
+                    String updatedEditableValues = matcher.replaceAll(replacementValue);
+                    fragmentEntryLink.setEditableValues(updatedEditableValues);
+                    fragmentEntryLinkLocalService.updateFragmentEntryLink(fragmentEntryLink);
+                    _log.info(String.format("Updated editableValues for FragmentEntryLink #%d to: %s.", fragmentEntryLink.getFragmentEntryLinkId(), updatedEditableValues));
+                }
+            } catch (Exception e) {
+                _log.error("Error: " + e.getMessage());
+            }
+        }
+    }
+
     @Reference
     private Portal portal;
     @Reference
@@ -141,6 +188,13 @@ public class SiteInitializerServiceImpl implements SiteInitializerService {
     private SiteNavigationMenuLocalService siteNavigationMenuLocalService;
     @Reference
     private PortletPreferenceValueLocalService portletPreferenceValueLocalService;
+
+    @Reference
+    private ObjectFieldLocalService objectFieldLocalService;
+    @Reference
+    private ObjectDefinitionLocalService objectDefinitionLocalService;
+    @Reference
+    private FragmentEntryLinkLocalService fragmentEntryLinkLocalService;
 
     private static final Log _log = LogFactoryUtil.getLog(SynchronizeSiteInitializerMVCActionCommandOverride.class);
 }

@@ -44,6 +44,7 @@
 							"widgetInstances": [
 								{
 									"widgetConfig": {
+										"siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_HEADER_NAV_MENU$]",
 										"displayStyle": "ddmTemplate_DEVCON_HEADER_NAV"
 									},
 									"widgetInstanceId": "siteNavigationMenuPortlet_header",
@@ -90,6 +91,7 @@
 							"widgetInstances": [
 								{
 									"widgetConfig": {
+										"siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_FOOTER_NAV_MENU$]",
 										"displayStyle": "ddmTemplate_DEVCON_FOOTER_NAV"
 									},
 									"widgetInstanceId": "siteNavigationMenuPortlet_footer",
