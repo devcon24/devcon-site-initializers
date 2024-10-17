@@ -3,11 +3,20 @@
     "pageElements": [
       {
         "definition": {
-          "fragmentSettings": {
-            "unallowedFragments": []
-          }
+          "indexed": true,
+          "layout": {}
         },
-        "type": "DropZone"
+        "pageElements": [
+          {
+            "definition": {
+              "fragmentSettings": {
+                "unallowedFragments": []
+              }
+            },
+            "type": "DropZone"
+          }
+        ],
+        "type": "Section"
       }
     ],
     "type": "Root"
