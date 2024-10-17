@@ -1,0 +1,585 @@
+{
+	"frontendTokenCategories": [
+		{
+			"frontendTokenSets": [
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#3E464B",
+							"editorType": "ColorPicker",
+							"label": "Neutral 1",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "neutral-1"
+								}
+							],
+							"name": "colorNeutral1",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#697C8A",
+							"editorType": "ColorPicker",
+							"label": "Neutral 2",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "neutral-2"
+								}
+							],
+							"name": "colorNeutral2",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#F1F1F1",
+							"editorType": "ColorPicker",
+							"label": "Neutral 3",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "neutral-3"
+								}
+							],
+							"name": "colorNeutral3",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#FFFFFF",
+							"editorType": "ColorPicker",
+							"label": "white",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "white"
+								}
+							],
+							"name": "white",
+							"type": "String"
+						}
+					],
+					"label": "Neutral",
+					"name": "neutral"
+				},
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#FDCC4A",
+							"editorType": "ColorPicker",
+							"label": "Primary Start",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "primaryStart"
+								}
+							],
+							"name": "primaryStart",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#FDCC4A",
+							"editorType": "ColorPicker",
+							"label": "Primary End",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "primaryEnd"
+								}
+							],
+							"name": "primaryEnd",
+							"type": "String"
+						}
+					],
+					"label": "primary",
+					"name": "primary"
+				},
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#60236B",
+							"editorType": "ColorPicker",
+							"label": "Secondary Start",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "secondaryStart"
+								}
+							],
+							"name": "secondaryStart",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#60236B",
+							"editorType": "ColorPicker",
+							"label": "Secondary End",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "secondaryEnd"
+								}
+							],
+							"name": "secondaryEnd",
+							"type": "String"
+						}
+					],
+					"label": "secondary",
+					"name": "secondary"
+				},
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#16161E",
+							"editorType": "ColorPicker",
+							"label": "Tertiary Start",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "tertiaryStart"
+								}
+							],
+							"name": "tertiaryStart",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#16161E",
+							"editorType": "ColorPicker",
+							"label": "Tertiary End",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "tertiaryEnd"
+								}
+							],
+							"name": "tertiaryEnd",
+							"type": "String"
+						}
+					],
+					"label": "tertiary",
+					"name": "tertiary"
+				}
+			],
+			"label": "color-system",
+			"name": "colorSystem"
+		},
+		{
+			"frontendTokenSets": [
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#D9AE40",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-active-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-active-background-color"
+								}
+							],
+							"name": "btnPrimaryActiveBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#D9AE40",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-active-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-active-border-color"
+								}
+							],
+							"name": "btnPrimaryActiveBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#003B56",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-active-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-active-color"
+								}
+							],
+							"name": "btnPrimaryActiveColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#FDCC4A",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-background-color"
+								}
+							],
+							"name": "btnPrimaryBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#FDCC4A",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-border-color"
+								}
+							],
+							"name": "btnPrimaryBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#003B56",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-color"
+								}
+							],
+							"name": "btnPrimaryColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#697C8A",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-disabled-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-disabled-background-color"
+								}
+							],
+							"name": "btnPrimaryDisabledBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#697C8A",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-disabled-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-disabled-border-color"
+								}
+							],
+							"name": "btnPrimaryDisabledBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#003B56",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-disabled-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-disabled-color"
+								}
+							],
+							"name": "btnPrimaryDisabledColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#EBBD45",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-hover-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-hover-background-color"
+								}
+							],
+							"name": "btnPrimaryDisabledBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#EBBD45",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-hover-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-hover-border-color"
+								}
+							],
+							"name": "btnPrimaryHoverBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#003B56",
+							"editorType": "ColorPicker",
+							"label": "btn-primary-hover-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-hover-color"
+								}
+							],
+							"name": "btnPrimaryHoverColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#D9AE40",
+							"editorType": "ColorPicker",
+							"label": "cta-primary-arrow-active-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "cta-primary-arrow-active-color"
+								}
+							],
+							"name": "ctaPrimaryArrowActiveColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#FDCC4A",
+							"editorType": "ColorPicker",
+							"label": "cta-primary-arrow-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "cta-primary-arrow-color"
+								}
+							],
+							"name": "ctaPrimaryArrowColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#697C8A",
+							"editorType": "ColorPicker",
+							"label": "cta-primary-arrow-disabled-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "cta-primary-arrow-disabled-color"
+								}
+							],
+							"name": "ctaPrimaryArrowDisabledColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#EBBD45",
+							"editorType": "ColorPicker",
+							"label": "cta-primary-arrow-hover-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "cta-primary-arrow-hover-color"
+								}
+							],
+							"name": "ctaPrimaryArrowHoverColor",
+							"type": "String"
+						}
+					],
+					"label": "btn-primary",
+					"name": "btnPrimary"
+				},
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#8F349E",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-active-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-active-background-color"
+								}
+							],
+							"name": "btnSecondaryActiveBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#8F349E",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-active-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-active-border-color"
+								}
+							],
+							"name": "btnSecondaryActiveBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#F1F1F1",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-active-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-active-color"
+								}
+							],
+							"name": "btnSecondaryActiveColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#60236B",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-background-color"
+								}
+							],
+							"name": "btnSecondaryBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#60236B",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-border-color"
+								}
+							],
+							"name": "btnSecondaryBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#F1F1F1",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-color"
+								}
+							],
+							"name": "btnSecondaryColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#697C8A",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-disabled-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-disabled-background-color"
+								}
+							],
+							"name": "btnSecondaryDisabledBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#697C8A",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-disabled-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-disabled-border-color"
+								}
+							],
+							"name": "btnSecondaryDisabledBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#F1F1F1",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-disabled-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-disabled-color"
+								}
+							],
+							"name": "btnSecondaryDisabledColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#772B85",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-hover-border-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-hover-border-color"
+								}
+							],
+							"name": "btnSecondaryBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#F1F1F1",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-hover-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-hover-color"
+								}
+							],
+							"name": "btnSecondaryHoverColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#772B85",
+							"editorType": "ColorPicker",
+							"label": "btn-secondary-hover-background-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-secondary-hover-background-color"
+								}
+							],
+							"name": "btnSecondaryHoverBackgroundColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#60236B",
+							"editorType": "ColorPicker",
+							"label": "cta-secondary-arrow-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "cta-secondary-arrow-color"
+								}
+							],
+							"name": "ctaSecondaryArrowColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#697C8A",
+							"editorType": "ColorPicker",
+							"label": "cta-secondary-arrow-disabled-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "cta-secondary-arrow-disabled-color"
+								}
+							],
+							"name": "ctaSecondaryArrowDisabledColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#772B85",
+							"editorType": "ColorPicker",
+							"label": "cta-secondary-arrow-hover-color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "cta-secondary-arrow-hover-color"
+								}
+							],
+							"name": "ctaSecondaryArrowHoverColor",
+							"type": "String"
+						}
+					],
+					"label": "btn-secondary",
+					"name": "btnSecondary"
+				}
+			],
+			"label": "buttons",
+			"name": "buttons"
+		}
+	]
+}
