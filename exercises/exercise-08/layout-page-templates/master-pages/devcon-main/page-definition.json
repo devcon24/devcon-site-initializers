@@ -23,7 +23,7 @@
 										"fragmentLink": {
 											"value": {
 												"href": {
-													"value": "/web/devcon/registration"
+													"value": "/web[$GROUP_FRIENDLY_URL$]/registration"
 												}
 											}
 										}
@@ -58,7 +58,7 @@
 						"definition": {
 							"fragment": {
 								"key": "devcon-page-wrapper",
-								"siteKey": "DevCon"
+								"siteKey": "[$GROUP_KEY$]"
 							},
 							"fragmentConfig": {},
 							"fragmentFields": [],
@@ -88,7 +88,7 @@
 						"definition": {
 							"fragment": {
 								"key": "devcon-footer",
-								"siteKey": "DevCon"
+								"siteKey": "[$GROUP_KEY$]"
 							},
 							"fragmentConfig": {},
 							"fragmentFields": [
@@ -131,7 +131,7 @@
 										"definition": {
 											"fragment": {
 												"key": "devcon-social-media",
-												"siteKey": "DevCon"
+												"siteKey": "[$GROUP_KEY$]"
 											},
 											"fragmentConfig": {},
 											"fragmentFields": [
