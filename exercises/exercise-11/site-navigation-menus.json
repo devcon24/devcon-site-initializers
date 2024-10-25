@@ -1,0 +1,42 @@
+[
+	{
+		"menuItems": [
+			{
+				"friendlyURL": "/agenda",
+				"externalReferenceCode": "devcon-header-agenda",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/faq",
+				"externalReferenceCode": "devcon-header-faq",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/speakers",
+				"externalReferenceCode": "devcon-header-speakers",
+				"privateLayout": false,
+				"type": "layout"
+			}
+		],
+		"name": "DEVCON_HEADER_NAV_MENU"
+	},
+	{
+		"menuItems": [
+			{
+				"friendlyURL": "/agenda",
+				"externalReferenceCode": "devcon-footer-agenda",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"friendlyURL": "/speakers",
+				"externalReferenceCode": "devcon-footer-speakers",
+				"privateLayout": false,
+				"type": "layout"
+			}
+		],
+		"name": "DEVCON_FOOTER_NAV_MENU"
+	}
+]
