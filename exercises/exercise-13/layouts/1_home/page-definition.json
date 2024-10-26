@@ -1,7 +1,69 @@
 {
 	"pageElement": {
 		"pageElements": [
-
+			{
+				"definition": {
+					"indexed": true,
+					"layout": {}
+				},
+				"pageElements": [
+					{
+						"definition": {
+							"indexed": true,
+							"layout": {
+								"widthType": "Fixed"
+							}
+						},
+						"pageElements": [
+							{
+								"definition": {
+									"fragment": {
+										"key": "devcon-homepage-banner",
+										"siteKey": "[$GROUP_KEY$]"
+									},
+									"fragmentConfig": {},
+									"fragmentFields": [
+										{
+											"id": "banner-header",
+											"value": {
+												"fragmentLink": {}
+											}
+										},
+										{
+											"id": "banner-link",
+											"value": {
+												"fragmentLink": {
+													"value": {
+														"href": {
+															"value": "/web[$GROUP_FRIENDLY_URL$]/registration"
+														}
+													}
+												}
+											}
+										},
+										{
+											"id": "banner-text",
+											"value": {
+												"fragmentLink": {}
+											}
+										},
+										{
+											"id": "banner-title",
+											"value": {
+												"fragmentLink": {}
+											}
+										}
+									],
+									"indexed": true
+								},
+								"type": "Fragment"
+							}
+						],
+						"type": "Section"
+					}
+				],
+				"type": "Section"
+			}
 		],
 		"type": "Root"
 	},
