@@ -1,0 +1,26 @@
+<div class="devcon-ticket-prices mt-3">
+    <h2 data-lfr-editable-id="devcon-ticket-prices-header" data-lfr-editable-type="text"
+        class="devcon-ticket-prices__header text-center">
+        Ticket Prices
+    </h2>
+    <div class="devcon-ticket-prices__section">
+        <div class="row align-items-lg-center align-items-sm-center align-items-center align-items-md-center flex-lg-row flex-sm-row flex-row flex-md-row">
+            [#list 0..configuration.numberOfPrices-1 as i]
+                <div class="col col-lg-4 col-sm-12 col-12 col-md-4 d-flex flex-column align-items-center">
+                    <h3 data-lfr-editable-type="text" data-lfr-editable-id="ticket-price-${i+1}"
+                        class="devcon-ticket-prices__title text-white">
+                        0 €
+                    </h3>
+                    <p data-lfr-editable-type="text" data-lfr-editable-id="ticket-rate-${i+1}"
+                       class="devcon-ticket-prices__rate text-white">
+                        Rate
+                    </p>
+                    <p data-lfr-editable-type="text" data-lfr-editable-id="ticket-dates-${i+1}"
+                       class="devcon-ticket-prices__dates text-white">
+                        (From - To)
+                    </p>
+                </div>
+            [/#list]
+        </div>
+    </div>
+</div>
