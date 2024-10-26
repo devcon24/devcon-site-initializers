@@ -1,6 +1,7 @@
 #!/bin/bash
 
-LIFERAY_HOME="/home/vitaliy/Work/Projects/pdmfc/cyprus-educ/moesy-sms/bundles"
+CURRENT_DIR="$(pwd)"
+LIFERAY_HOME="${CURRENT_DIR}/bundles"
 
 TEMP_DIRS=(
     "${LIFERAY_HOME}/logs"
@@ -9,6 +10,16 @@ TEMP_DIRS=(
     "${LIFERAY_HOME}/tomcat-9.0.83/logs"
     "${LIFERAY_HOME}/tomcat-9.0.83/temp"
     "${LIFERAY_HOME}/tomcat-9.0.83/work"
+)
+
+TEMP_FILES=(
+  "${CURRENT_DIR}/build"
+  "${CURRENT_DIR}/node_modules"
+  "${CURRENT_DIR}/node_modules_cache"
+  "${CURRENT_DIR}/.yarnrc"
+  "${CURRENT_DIR}/package.json"
+  "${CURRENT_DIR}/package-lock.json"
+  "${CURRENT_DIR}/yarn.lock"
 )
 
 cleanup_dir() {
@@ -24,4 +35,13 @@ cleanup_dir() {
 
 for DIR in "${TEMP_DIRS[@]}"; do
     cleanup_dir "${DIR}"
+done
+
+for TEMP_FILE in "${TEMP_FILES[@]}"; do
+    if [ -e "${TEMP_FILE}" ]; then
+      echo "Removing ${TEMP_FILE}..."
+      rm -rf "${TEMP_FILE:?}"
+    else
+        echo "${TEMP_FILE} does not exist."
+    fi
 done
