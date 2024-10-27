@@ -1,0 +1,204 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"fragmentStyle": {
+						"backgroundColor": "tertiaryStart"
+					},
+					"indexed": true,
+					"layout": {}
+				},
+				"pageElements": [
+					{
+						"definition": {
+							"indexed": true,
+							"layout": {
+								"widthType": "Fixed"
+							}
+						},
+						"pageElements": [
+							{
+								"definition": {
+									"fragment": {
+										"key": "devcon-speakers",
+										"siteKey": "[$GROUP_KEY$]"
+									},
+									"fragmentConfig": {},
+									"fragmentFields": [
+										{
+											"id": "devcon-speakers-header",
+											"value": {
+												"fragmentLink": {}
+											}
+										}
+									],
+									"indexed": true
+								},
+								"pageElements": [
+									{
+										"definition": {
+											"fragmentDropZoneId": "devcon-speakers-list"
+										},
+										"pageElements": [
+											{
+												"definition": {
+													"collectionConfig": {
+														"collectionReference": {
+															"className": "com.liferay.object.web.internal.info.collection.provider.ObjectEntrySingleFormVariationInfoCollectionProvider_[$COMPANY_ID$]_C_Speaker"
+														},
+														"collectionType": "CollectionProvider"
+													},
+													"collectionViewports": [
+														{
+															"collectionViewportDefinition": {
+																"numberOfColumns": 1
+															},
+															"id": "landscapeMobile"
+														},
+														{
+															"collectionViewportDefinition": {
+																"numberOfColumns": 1
+															},
+															"id": "portraitMobile"
+														},
+														{
+															"collectionViewportDefinition": {
+																"numberOfColumns": 1
+															},
+															"id": "tablet"
+														}
+													],
+													"displayAllItems": true,
+													"displayAllPages": true,
+													"layout": {
+														"flexWrap": "Wrap"
+													},
+													"listItemStyle": "",
+													"listStyle": "flex-row",
+													"numberOfColumns": 1,
+													"numberOfItems": 5,
+													"numberOfItemsPerPage": 20,
+													"numberOfPages": 5,
+													"paginationType": "None",
+													"showAllItems": false,
+													"templateKey": ""
+												},
+												"pageElements": [
+													{
+														"definition": {
+															"collectionItemConfig": {}
+														},
+														"pageElements": [
+															{
+																"definition": {
+																	"fragment": {
+																		"key": "devcon-speaker-card",
+																		"siteKey": "[$GROUP_KEY$]"
+																	},
+																	"fragmentConfig": {},
+																	"fragmentFields": [
+																		{
+																			"id": "devcon-speaker-last-name",
+																			"value": {
+																				"fragmentLink": {},
+																				"text": {
+																					"mapping": {
+																						"fieldKey": "ObjectField_lastName",
+																						"itemReference": {
+																							"contextSource": "CollectionItem"
+																						}
+																					}
+																				}
+																			}
+																		},
+																		{
+																			"id": "devcon-speaker-first-name",
+																			"value": {
+																				"fragmentLink": {},
+																				"text": {
+																					"mapping": {
+																						"fieldKey": "ObjectField_firstName",
+																						"itemReference": {
+																							"contextSource": "CollectionItem"
+																						}
+																					}
+																				}
+																			}
+																		},
+																		{
+																			"id": "devcon-speaker-company",
+																			"value": {
+																				"fragmentLink": {},
+																				"text": {
+																					"mapping": {
+																						"fieldKey": "ObjectField_companyName",
+																						"itemReference": {
+																							"contextSource": "CollectionItem"
+																						}
+																					}
+																				}
+																			}
+																		},
+																		{
+																			"id": "devcon-speaker-logo",
+																			"value": {
+																				"fragmentImage": {
+																					"url": {
+																						"mapping": {
+																							"fieldKey": "ObjectField_50888#previewURL",
+																							"itemReference": {
+																								"contextSource": "CollectionItem"
+																							}
+																						}
+																					}
+																				},
+																				"fragmentLink": {}
+																			}
+																		},
+																		{
+																			"id": "devcon-speaker-position",
+																			"value": {
+																				"fragmentLink": {},
+																				"text": {
+																					"mapping": {
+																						"fieldKey": "ObjectField_position",
+																						"itemReference": {
+																							"contextSource": "CollectionItem"
+																						}
+																					}
+																				}
+																			}
+																		}
+																	],
+																	"indexed": true
+																},
+																"type": "Fragment"
+															}
+														],
+														"type": "CollectionItem"
+													}
+												],
+												"type": "Collection"
+											}
+										],
+										"type": "FragmentDropZone"
+									}
+								],
+								"type": "Fragment"
+							}
+						],
+						"type": "Section"
+					}
+				],
+				"type": "Section"
+			}
+		],
+		"type": "Root"
+	},
+	"settings": {
+		"masterPage": {
+			"key": "devcon-secondary"
+		}
+	}
+}
