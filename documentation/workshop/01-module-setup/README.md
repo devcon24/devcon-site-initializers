@@ -47,4 +47,4 @@ and click the Add button.
 
 A blank site should be created, considering there are no content descriptors for Site Initializer yet.
 
-[Introduction: Site Overview <<](../00-site-overview/README.md) | [>> 2. Layout Set Configuration](../02-layout-set/README.md)
+[<< Introduction: Site Overview](../00-site-overview/README.md) | [2. Layout Set Configuration >>](../02-layout-set/README.md)

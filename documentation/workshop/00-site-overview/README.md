@@ -39,4 +39,4 @@ The Speakers page should have just one component:
 
 And now let's start the Site Initializer journey!
 
-[1. Module Setup](../01-module-setup/README.md)
+[1. Module Setup >>](../01-module-setup/README.md)
