@@ -6,7 +6,7 @@
 
 Understand the anatomy of the Site Initializer OSGi module and required configuration.
 
-## Theoretical Part
+## Overview
 
 Site Initializers provide the possibility to define site content in special descriptors files following Content-as-Code approach.
 
@@ -21,7 +21,7 @@ Site Initializer modules needs additional OSGi headers in `bnd.bnd`:
 
 Content descriptors for Site Initializer should be defined inside [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) folder.
 
-## Practical Part 
+## Practice
 
 1. Navigate to [devcon-site-initializer](../../../modules/devcon-site-initializer) module:
 
