@@ -4,15 +4,15 @@
 
 ## Goal 
 
-Learn how to define fragments for Site Initializer.
+Learn how to define fragments for Site Initializer, prepare Header and Footer fragments for Master pages.
 
 ## Overview
 
 [Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) are main building blocks of a portal page.
 
-When using Master Templates approach the Header and Footer fragments are usually developed and used on the Master pages.
+When using the Master Templates approach the Header and Footer fragments are usually developed for the Master pages.
 
-Fragments in Site Initializer are defined within `fragments` folder.
+Fragments for Site Initializer are defined in `fragments` folder.
 
 The [collection.json](../../../exercises/exercise-06/fragments/group/devcon/collection.json) file specifies the name and description for the Fragment Collection:
 
@@ -38,11 +38,19 @@ Each fragment is defined in a separate folder and has a descriptor file `fragmen
 
 1. Copy [fragments](../../../exercises/exercise-06/fragments) folder from exercise-06 to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
 
-2. Redeploy Site Initializer module and synchronize changes.
+2. Analyze the folder structure and files:
 
-3. Navigate to Site Menu → Design → Fragments. Make sure fragments are created:
+    ![02.png](images/02.png)
 
-![01.png](images/01.png)
+3. Analyze fragments implementation.
+    
+    _**Note**: a DevCon Header fragment has two variations in configuration: primary and secondary, for DevCon Main and DevCon Secondary Master pages._ 
+
+4. Redeploy Site Initializer module and synchronize changes.
+
+5. Navigate to Site Menu → Design → Fragments. Make sure fragments are created:
+
+    ![01.png](images/01.png)
 
 
 [<< 5. Style Books](../05-style-books/README.md) | [7. Master Pages >>](../07-master-pages/README.md)
