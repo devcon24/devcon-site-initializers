@@ -46,7 +46,7 @@ Each fragment is defined in a separate folder and has a descriptor file `fragmen
     
     _**Note**: a DevCon Header fragment has two variations in configuration: primary and secondary, for DevCon Main and DevCon Secondary Master pages._ 
 
-4. Redeploy Site Initializer module and synchronize changes.
+4. Redeploy the Site Initializer module and synchronize the changes.
 
 5. Navigate to Site Menu → Design → Fragments. Make sure fragments are created:
 
