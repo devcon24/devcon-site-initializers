@@ -9,3 +9,5 @@
 [2. Layout Set](02-layout-set/README.md)
 
 [3. Update Support](03-update-support/README.md)
+
+[4. Styling and Branding](04-styling-branding/README.md)
