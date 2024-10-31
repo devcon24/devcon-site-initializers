@@ -4,7 +4,7 @@
 
 ## Goal 
 
-Review different approaches for styling in Liferay, incorporate Theme CSS Client Extensions and Style Books. 
+Review different approaches for styling in Liferay, incorporate Theme CSS Client Extensions.
 
 ## Overview
 
@@ -60,4 +60,4 @@ With this approach you may have a Client Extension with common styling, and mult
 
 This way you have created a relation between the LayoutSet and the Client Extension to apply styling from the Client Extension for all the pages on a site.
 
-[<< 3. Update Support](../03-update-support/README.md) | 
+[<< 3. Update Support](../03-update-support/README.md) | [5. Style Books >>](../05-style-books/README.md)

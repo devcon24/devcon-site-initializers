@@ -11,3 +11,5 @@
 [3. Update Support](03-update-support/README.md)
 
 [4. Styling and Branding](04-styling-branding/README.md)
+
+[5. Style Books](05-style-books/README.md)
