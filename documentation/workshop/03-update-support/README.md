@@ -36,4 +36,4 @@ _Blog link:_
 ![02.png](images/02.png)
    Clicking the Synchronize button should apply the changes from a Site Initializer to the site.
 
-[<< 2. Layout Set Configuration](../02-layout-set/README.md) | [4. Styling and Branding](../04-styling-branding/README.md)
+[<< 2. Layout Set Configuration](../02-layout-set/README.md) | [4. Styling and Branding >>](../04-styling-branding/README.md)

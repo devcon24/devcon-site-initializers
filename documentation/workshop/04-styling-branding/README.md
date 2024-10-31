@@ -17,7 +17,7 @@ Before proceeding with content and pages setup it's important to define the appr
 |          Custom CSS   | CSS is defined as part of LayoutSet configuration. Used by out-of-the-box Site Initializers. Good for small demos, but not a structured and reusable way for larger projects |
 | **Client Extensions** | **Styling can be defined in an external Client Extension (globalCss / themeCSS), which can be applied to site pages or page templates**                                      |
 
-The preferred approach for styling the portal is using Client Extensions.
+In most cases the preferred approach for styling the portal is using Client Extensions.
 
 With a [Theme CSS Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension) you can define styling in the same way as with a regular theme, but the theme is not required anymore.
 
@@ -55,7 +55,7 @@ With this approach you may have a Client Extension with common styling, and mult
 5. Click `+` button for `Theme CSS`:   
 ![02.png](images/02.png)
 
-6. Select the `DevCon Site Initializer Theme CSS` Client Extension:
+6. Select the `DevCon Site Initializer Theme CSS` Client Extension and save configuration:
 ![03.png](images/03.png)
 
 This way you have created a relation between the LayoutSet and the Client Extension to apply styling from the Client Extension for all the pages on a site.
