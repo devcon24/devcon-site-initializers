@@ -35,10 +35,13 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 
 ## Practice
 
-1. Copy [layout-set](../../../exercises/exercise-02/layout-set) folder from `exercise-02` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) folder.
+1. Copy [layout-set](../../../exercises/exercise-02/layout-set) folder from `exercise-02` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) folder:
+
+   ![00.png](images/00.png)
+
 2. Analyze the [metadata.json](../../../exercises/exercise-02/layout-set/public/metadata.json) file.
 
-    _Here the Dialect theme is defined for a Layout Set, and also defined settings to disable the header and footer._
+    _**Note**: here the Dialect theme is defined for a Layout Set, and also defined settings to disable the header and footer._
 
 3. Re-deploy Site Initializer module.
 4. Delete previously created site.
