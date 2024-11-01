@@ -17,3 +17,5 @@
 [6. Fragments](06-fragments/README.md)
 
 [7. Master Pages](07-master-pages/README.md)
+
+[8. Master Pages Content](08-master-pages-content/README.md)

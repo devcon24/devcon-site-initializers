@@ -4,7 +4,7 @@
 
 ## Goal 
 
-Learn how to create Master Pages and define them in a Site Initializer.
+Learn how to define Master Pages configuration in the Site Initializer.
 
 ## Overview
 
@@ -85,4 +85,4 @@ For each Master Page a subdirectory should be created with three files:
 5. Navigate to Site Menu → Design → Page Templates → Masters. Make sure Master Pages are created:
 ![02.png](images/02.png)
 
-[<< 6. Fragments](../06-fragments/README.md) | 
+[<< 6. Fragments](../06-fragments/README.md) | [8. Master Pages Content >> ](../08-master-pages-content/README.md)

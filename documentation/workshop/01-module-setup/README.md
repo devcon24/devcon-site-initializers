@@ -23,7 +23,7 @@ Content descriptors for Site Initializer should be defined inside [site-initiali
 
 ## Practice
 
-1. Navigate to [devcon-site-initializer](../../../modules/devcon-site-initializer) module:
+1. Navigate to [devcon-site-initializer](../../../modules/devcon-site-initializer) module. Analyze the module structure:
 
 ![01.png](images/01.png)
 
@@ -41,10 +41,12 @@ Content descriptors for Site Initializer should be defined inside [site-initiali
 4. Navigate to Control Panel → Sites → New, and choose DevCon from the list of provided sites:
 ![02.png](images/02.png)
 
-5. Specify Site name, e.g. DevCon 2024:
-![03.png](images/03.png)
-and click the Add button.
+   5. Specify Site name, e.g. "DevCon 2024":
+   ![03.png](images/03.png)
+   and click the Add button.
 
 A blank site should be created, considering there are no content descriptors for Site Initializer yet.
+
+## References
 
 [<< Introduction: Site Overview](../00-site-overview/README.md) | [2. Layout Set Configuration >>](../02-layout-set/README.md)
