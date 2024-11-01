@@ -42,7 +42,7 @@ A DevCon Secondary template should contain:
 
 1.3. Make sure new fragments created.
 
-### Setup Master Pages 
+### 2. Setup Master Pages 
 
 #### DevCon Main Master Page 
 
@@ -69,5 +69,31 @@ A DevCon Secondary template should contain:
    ![04.png](images/04.png)
 
 5. Publish the Master Page.
+
+### 3. Define Master Pages Content Descriptors
+
+1. Navigate to Site Menu → Design → Page Templates → Masters.
+2. Click on DevCon Main → Actions → Export:
+
+   ![05.png](images/05.png)
+
+3. Open the `page-definition.json` file inside the downloaded zip:
+
+   ![06.png](images/06.png)
+
+4. Copy JSON from `page-definition.json` to a temporary json file, and format it.
+5. Adjust the JSON definition in a following way:
+- Remove generated `id` elements, e.g. `"id": "9c456897-d60c-6835-e8fe-163e2cc6b74d",`;
+- Replace hard-coded `siteKey` value with `[$GROUP_KEY$]` placeholder;
+- Replace hard-coded Site URL with `[$GROUP_FRIENDLY_URL$]` placeholder.
+![07.png](images/07.png)
+
+6. Update `page-definition.json` content for DevCon Main using the resulting JSON. 
+7. Repeat the same steps for DevCon Secondary Master Page.
+
+_**Note**: you can also use already prepare files from [exercise-08](../../../exercises/exercise-08)_ 
+
+8. Redeploy Site Initializer module and run Synchronization.
+9. Check Master Pages, make sure they remain the same after applying changes from Site Initializer.
 
 [<< 7. Master Pages](../07-master-pages/README.md) | 
