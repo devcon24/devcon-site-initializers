@@ -91,7 +91,7 @@ A DevCon Secondary template should contain:
 6. Update `page-definition.json` content for DevCon Main using the resulting JSON. 
 7. Repeat the same steps for DevCon Secondary Master Page.
 
-_**Note**: you can also use already prepare files from [exercise-08](../../../exercises/exercise-08)_ 
+   _**Note**: you can also use already prepare files from [exercise-08](../../../exercises/exercise-08)_ 
 
 8. Redeploy Site Initializer module and run Synchronization.
 9. Check Master Pages, make sure they remain the same after applying changes from Site Initializer.
