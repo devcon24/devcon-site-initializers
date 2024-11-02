@@ -1,33 +1,33 @@
 {
-	"pageElement": {
-		"pageElements": [
-			{
-				"definition": {
-					"fragmentSettings": {
-						"unallowedFragments": []
-					}
-				},
-				"type": "DropZone"
-			}
-		],
-		"type": "Root"
-	},
-	"settings": {
-		"styleBook": {
-			"key": "devcon",
-			"name": "DevCon Stylebook"
-		},
-		"themeCSSClientExtension": {
-			"externalReferenceCode": "LXC:devcon-site-initializer-theme-css",
-			"name": "DevCon Site Initializer Theme CSS"
-		},
-		"themeName": "Dialect",
-		"themeSettings": {
-			"lfr-theme:regular:show-header-search": "false",
-			"lfr-theme:regular:show-header": "false",
-			"lfr-theme:regular:show-footer": "false",
-			"lfr-theme:regular:wrap-widget-page-content": "false"
-		}
-	},
-	"version": 1.1
+  "pageElement": {
+    "pageElements": [
+      {
+        "definition": {
+          "fragmentSettings": {
+            "unallowedFragments": []
+          }
+        },
+        "type": "DropZone"
+      }
+    ],
+    "type": "Root"
+  },
+  "settings": {
+    "styleBook": {
+      "key": "devcon",
+      "name": "DevCon Stylebook"
+    },
+    "themeCSSClientExtension": {
+      "externalReferenceCode": "LXC:devcon-site-initializer-theme-css",
+      "name": "DevCon Site Initializer Theme CSS"
+    },
+    "themeName": "Dialect",
+    "themeSettings": {
+      "lfr-theme:regular:show-header-search": "false",
+      "lfr-theme:regular:show-header": "false",
+      "lfr-theme:regular:show-footer": "false",
+      "lfr-theme:regular:wrap-widget-page-content": "false"
+    }
+  },
+  "version": 1.1
 }

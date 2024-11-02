@@ -12,15 +12,7 @@
 			</div>
 			<!-- Navigation -->
 			<div class="devcon-footer__navigation">
-				[#assign footerNavigationPreferences = freeMarkerPortletPreferences.getPreferences({
-					"displayStyle": "ddmTemplate_DEVCON_FOOTER_NAV"
-				})
-				/]
-				[@liferay_portlet["runtime"]
-					defaultPreferences=footerNavigationPreferences
-					instanceId="siteNavigationMenuPortlet_footer"
-					portletName="com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
-				/]
+				<lfr-widget-nav></lfr-widget-nav>
 			</div>
 			<!-- Social -->
 			<div class="devcon-footer__social">

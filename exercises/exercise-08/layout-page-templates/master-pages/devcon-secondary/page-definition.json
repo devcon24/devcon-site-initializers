@@ -26,10 +26,7 @@
           "indexed": true,
           "widgetInstances": [
             {
-              "widgetConfig": {
-                "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV"
-              },
-              "widgetInstanceId": "siteNavigationMenuPortlet_header",
+              "widgetConfig": {},
               "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
             }
           ]

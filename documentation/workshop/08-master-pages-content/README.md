@@ -6,19 +6,6 @@
 
 Learn how to define content for Master Pages, hands-on practice on preparing content descriptors.
 
-## Overview
-
-Content for Master Pages is defined in a `page-definition.json`.  In a previous task you defined the basic content descriptor: with DropZone only, and required configuration.
-
-To define additional elements the root `pageElements` array inside the `page-definition.json` needs to be adjusted:
-![01.png](images/01.png)
-
-The JSON structure required for page definition is quite complex to be defined manually. Thus, usually a Master Page is created manually for the first time, and then exported and incorporated into Site Initializer.
-
-The exported JSON needs to be adjusted to make sure it does not contain any environment-specific or site-specific data (IDs, Site URL or Site Key, etc.). Site Initializer supports special placeholders for such cases. 
-
-_Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/layout-page-templates/master-pages/main-1/page-definition.json
-
 ## Context
 
 In the context of this Workshop Demo you need to define content for two Master Templates: DevCon Main and DevCon Secondary.
@@ -31,6 +18,19 @@ A DevCon Main template should contain:
 A DevCon Secondary template should contain:
 - Header: a DevCon Header fragment with secondary configuration variation;
 - Content: a Master Page DropZone.
+
+## Overview
+
+Content for Master Pages is defined in a `page-definition.json`.  In a previous task you defined the basic content descriptor: with DropZone only, and required configuration.
+
+To define additional elements the root `pageElements` array inside the `page-definition.json` needs to be adjusted:
+![01.png](images/01.png)
+
+The JSON structure required for page definition is quite complex to be defined manually. Thus, usually a Master Page is created manually for the first time, and then exported and incorporated into Site Initializer.
+
+The exported JSON needs to be adjusted to make sure it does not contain any environment-specific or site-specific data (IDs, Site URL or Site Key, etc.). Site Initializer supports special placeholders for such cases. 
+
+_Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/layout-page-templates/master-pages/main-1/page-definition.json
 
 ## Practice
 

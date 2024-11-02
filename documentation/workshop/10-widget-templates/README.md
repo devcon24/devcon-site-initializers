@@ -51,10 +51,22 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 ## Practice
 
 1. Copy [ddm-templates](../../../exercises/exercise-10/ddm-templates) folder from `exercise-10` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
-2. Redeploy Site Initializer module and run Synchronization.
-3. Make sure Widget Templates for header/footer navigation applied:
+2. Analyze widget templates definition (`ddm-template.json`) and template (`ddm-template.ftl`) files.
+3. Redeploy Site Initializer module and run Synchronization.
+4. Navigate to Site Menu → Design → Templates → Widget Templates. Make sure `DevCon Header Navigation` and `DevCon Footer Navigation` templates created:
 
   ![01.png](images/01.png)
+
+5. Navigate to Site Menu → Design → Page Templates → Masters and edit `DevCon Main` Master Page.
+6. Navigate to header navigation configuration:
+  
+  ![02.png](images/02.png)
+  
+7. Choose `DevCon Header Navigation` display template:
+
+  ![03.png](images/03.png)
+
+8. Select `DevCon Footer Navigation` for footer navigation in the same way.
 
   _**Notes**: widget templates are applied "automatically" because the Header/Footer fragments pass the `displayStyle` value to portlet preferences of the embedded navigation widget. Styling is applied from the Theme CSS Client Extension deployed previously._ 
 

@@ -15,15 +15,7 @@
 			<!-- Navigation & Registration -->
 			<div class="d-flex p-1 align-items-center">
 				<div class="devcon-header__navigation">
-					[#assign headerNavigationPreferences = freeMarkerPortletPreferences.getPreferences({
-						"displayStyle": "ddmTemplate_DEVCON_HEADER_NAV"
-					})
-					/]
-					[@liferay_portlet["runtime"]
-						defaultPreferences=headerNavigationPreferences
-						instanceId="siteNavigationMenuPortlet_header"
-						portletName="com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
-					/]
+					<lfr-widget-nav></lfr-widget-nav>
 				</div>
 				<a data-lfr-editable-id="devcon-registration-link"
 				   data-lfr-editable-type="link"
