@@ -34,19 +34,18 @@ The JSON for page definition should be cleaned up from environment-specific data
 
 2.1. Navigate to Site Builder → Pages and edit the Home page:
 
-    ![01.png](images/01.png)
+![01.png](images/01.png)
 
 2.2. Add a wrapping container and an inner fixed-width container:
 
-    ![02.png](images/02.png)
+![02.png](images/02.png)
 
 2.3. Add `DevCon Home Page Banner` fragment to the inner container:
 
-    ![03.png](images/03.png)
+![03.png](images/03.png)
 
 2.4. Add `DevCon Ticket Prices` fragment below, and specify the values for editable elements:
 
-    ![04.png](images/04.png)
-
+![04.png](images/04.png)
 
 [12. Customization](../12-customization/README.md) | 
