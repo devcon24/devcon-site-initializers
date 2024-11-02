@@ -95,7 +95,7 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
     ```
 
 9. Replace values for `displayStyleGroupKey` and `displayStyleGroupId` with placeholders: `[$GROUP_KEY$]` / `[$GROUP_ID$]`.
-10. Update `widgetInstances` in Master Page `page-definition.json` with the value above, [see](https://github.com/vitaliy-koshelenko/devcon-site-initializers/commit/0ce4f764ca5aeb0700107fc354bbb0262f859b24).
+10. Update `widgetInstances` sections in `page-definition.json` for Master Page with the value above, [see](https://github.com/vitaliy-koshelenko/devcon-site-initializers/commit/0ce4f764ca5aeb0700107fc354bbb0262f859b24).
   
     _**Note**: you can use updated [page-definition.json](../../../exercises/exercise-10/layout-page-templates/master-pages/devcon-main/page-definition.json) from `exercise-10`._
 
