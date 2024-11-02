@@ -90,7 +90,7 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/mas
 - Eliminate `widgetInstances` section for navigation menus:
   ![08.png](images/08.png)
 
-  _**Note**: this is required for navigation configuration export later on.
+  _**Note**: this is required for navigation configuration export later on._
 
 6. Update `page-definition.json` content for DevCon Main using the resulting JSON. 
 7. Repeat the same steps for DevCon Secondary Master Page.
