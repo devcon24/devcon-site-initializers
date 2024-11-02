@@ -75,23 +75,24 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 
 10. Find `widgetInstances` sections in the exported JSON, e.g.:
 
-
-     "widgetInstances": [
-       {
-         "widgetConfig": {
-           "siteNavigationMenuId": "0",
-           "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV",
-           "displayDepth": "0",
-           "displayStyleGroupKey": "DevCon 2024",
-           "siteNavigationMenuType": "-1",
-           "rootMenuItemType": "absolute",
-           "expandedLevels": "auto",
-           "rootMenuItemLevel": "0",
-           "displayStyleGroupId": "35968"
-         },
-         "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
-       }
-     ]
+    ``` 
+        "widgetInstances": [
+           {
+             "widgetConfig": {
+               "siteNavigationMenuId": "0",
+               "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV",
+               "displayDepth": "0",
+               "displayStyleGroupKey": "DevCon 2024",
+               "siteNavigationMenuType": "-1",
+               "rootMenuItemType": "absolute",
+               "expandedLevels": "auto",
+               "rootMenuItemLevel": "0",
+               "displayStyleGroupId": "35968"
+             },
+             "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+           }
+         ]
+    ```
 
 9. Replace values for `displayStyleGroupKey` and `displayStyleGroupId` with placeholders: `[$GROUP_KEY$]` / `[$GROUP_ID$]`.
 10. Update `widgetInstances` in Master Page `page-definition.json` with the value above, [see](https://github.com/vitaliy-koshelenko/devcon-site-initializers/commit/0ce4f764ca5aeb0700107fc354bbb0262f859b24).
