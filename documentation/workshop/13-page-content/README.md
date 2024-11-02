@@ -44,8 +44,31 @@ The JSON for page definition should be cleaned up from environment-specific data
 
 ![03.png](images/03.png)
 
-2.4. Add `DevCon Ticket Prices` fragment below, and specify the values for editable elements:
+2.4. Add `DevCon Ticket Prices` fragment below, and specify values for the editable elements:
 
 ![04.png](images/04.png)
 
+### 3. Content Definition
+
+3.1. Click ⋮ → Save Composition for a wrapping container to save the Fragment Composition for the Home Page:
+
+![05.png](images/05.png)
+
+3.2. Specify fragment name, and save the composition:
+
+![06.png](images/06.png)
+
+_Important: make sure to check both `Save Inline Content` and `Save Mapping Configuration and Link` to save mapping and inline content_
+
+3.3. Navigate to Fragments and export the fragment created as fragment composition by clicking ⋮ → Export:
+
+![07.png](images/07.png)
+
+3.4. Open the `fragment-composition-definition.json` file inside the exported ZIP file:
+
+![08.png](images/08.png)
+
+
+
 [12. Customization](../12-customization/README.md) | 
+
