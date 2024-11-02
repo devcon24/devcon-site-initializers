@@ -12,7 +12,7 @@ Incorporate custom Style Books to Site Initializer.
 
 Style Books are applied for token definitions, based on a theme applied for a public LayoutSet of the Site.
 
-For Style Books definition there are approaches as well, based on the theme used:
+For Style Books definition there are different approaches as well, based on the theme used:
 
 |             Approach | Description                                                                                                                                           |
 |---------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------|

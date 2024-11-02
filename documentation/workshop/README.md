@@ -23,3 +23,5 @@
 [9. Pages Definition](09-layouts/README.md)
 
 [10. Widget Templates](10-widget-templates/README.md)
+
+[11. Navigation Menus](11-navigation-menus/README.md)

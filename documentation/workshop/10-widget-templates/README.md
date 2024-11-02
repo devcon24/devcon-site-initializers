@@ -16,7 +16,7 @@ Widget Templates are used to customize the layout of out-of-the-box widgets havi
 
 Using Widget Templates for Site Navigation Menu you can customize how the site menus (e.g. header and footer navigation) are rendered.
 
-In the Site Initializer Widget Templates are defined in `ddm-templates` folder. For each Widget Template a subfolder must be created.
+Widget Templates in the Site Initializer are defined inside `ddm-templates` folder. For each Widget Template a subfolder must be created.
 
 The subfolder should contain two files:
 - `ddm-template.ftl` - a template file, sample:
@@ -56,6 +56,6 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 
   ![01.png](images/01.png)
 
-  _**Notes**: widget templates are applied "automatically" because the Header/Footer fragments pass the `displayStyle` value to portlet preferences of the embedded navigation widget. The styling is applied from the Theme CSS Client Extension deployed previously._ 
+  _**Notes**: widget templates are applied "automatically" because the Header/Footer fragments pass the `displayStyle` value to portlet preferences of the embedded navigation widget. Styling is applied from the Theme CSS Client Extension deployed previously._ 
 
-[<< 9. Pages Definition](../09-layouts/README.md) | 
+[<< 9. Pages Definition](../09-layouts/README.md) | [11. Navigation Menus >>](../11-navigation-menus/README.md)
