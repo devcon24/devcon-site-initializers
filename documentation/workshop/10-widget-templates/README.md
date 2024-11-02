@@ -94,6 +94,13 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
      ]
 
 9. Replace values for `displayStyleGroupKey` and `displayStyleGroupId` with placeholders: `[$GROUP_KEY$]` / `[$GROUP_ID$]`.
-10. Update `widgetInstances` in 
+10. Update `widgetInstances` in Master Page `page-definition.json` with the value above, [see](https://github.com/vitaliy-koshelenko/devcon-site-initializers/commit/0ce4f764ca5aeb0700107fc354bbb0262f859b24).
+  
+    _**Note**: you can use updated [page-definition.json](../../../exercises/exercise-10/layout-page-templates/master-pages/devcon-main/page-definition.json) from `exercise-10`._
+
+12. Redeploy Site Initializer module and recreate the site. Make sure widget templates are applied:
+
+    ![05.png](images/05.png)
+    _**Note:** some changes like this might not be propagated with Synchronize feature, in such cases might be needed._
 
 [<< 9. Pages Definition](../09-layouts/README.md) | [11. Navigation Menus >>](../11-navigation-menus/README.md)
