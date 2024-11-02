@@ -10,7 +10,7 @@ Learn how you can customize the site initialization process in order to workarou
 
 Even though Liferay provides a bunch of various extension points to inject custom functionality, if you look at [BundleSiteInitializer](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-extender/site-initializer-extender/src/main/java/com/liferay/site/initializer/extender/internal/BundleSiteInitializer.java), the heart of Site Initializer, you'll see that it's not designed to be extendable at all: a monolith non-OSGi class located in an internal package.
 
-However, if you use [Update Support](README.md) - you can customize the Synchronize process by overriding an appropriate MVCCommand, and introducing custom logic before/after Site Initializer synchronization is run:
+However, if you use [Update Support](../03-update-support/README.md) - you can customize the Synchronize process by overriding an appropriate MVCCommand, and introducing custom logic before/after Site Initializer synchronization is run:
 
 ```java
 @Component(
