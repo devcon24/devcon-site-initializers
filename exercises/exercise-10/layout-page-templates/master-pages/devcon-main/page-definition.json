@@ -37,6 +37,20 @@
           ],
           "indexed": true,
           "widgetInstances": [
+            {
+              "widgetConfig": {
+                "siteNavigationMenuId": "0",
+                "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV",
+                "displayDepth": "0",
+                "displayStyleGroupKey": "[$GROUP_KEY$]",
+                "siteNavigationMenuType": "-1",
+                "rootMenuItemType": "absolute",
+                "expandedLevels": "auto",
+                "rootMenuItemLevel": "0",
+                "displayStyleGroupId": "[$GROUP_ID$]"
+              },
+              "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+            }
           ]
         },
         "type": "Fragment"
@@ -99,6 +113,20 @@
           ],
           "indexed": true,
           "widgetInstances": [
+            {
+              "widgetConfig": {
+                "siteNavigationMenuId": "0",
+                "displayStyle": "ddmTemplate_DEVCON_FOOTER_NAV",
+                "displayDepth": "0",
+                "displayStyleGroupKey": "[$GROUP_KEY$]",
+                "siteNavigationMenuType": "-1",
+                "rootMenuItemType": "absolute",
+                "expandedLevels": "auto",
+                "rootMenuItemLevel": "0",
+                "displayStyleGroupId": "[$GROUP_ID$]"
+              },
+              "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+            }
           ]
         },
         "pageElements": [
