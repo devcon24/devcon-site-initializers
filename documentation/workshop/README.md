@@ -27,3 +27,5 @@
 [11. Navigation Menus](11-navigation-menus/README.md)
 
 [12. Customization](12-customization/README.md)
+
+[13. Page Content](13-page-content/README.md)

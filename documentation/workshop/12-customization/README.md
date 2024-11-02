@@ -68,4 +68,4 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
 
    ![03.png](images/03.png)
 
-[<< 11. Navigation Menus](../11-navigation-menus/README.md) | 
+[<< 11. Navigation Menus](../11-navigation-menus/README.md) | [13. Page Content >>](../13-page-content/README.md)
