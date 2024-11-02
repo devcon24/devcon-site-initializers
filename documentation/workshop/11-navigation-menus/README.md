@@ -92,7 +92,7 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/mas
 
   ![03.png](images/03.png)
 
-8. Publish `DevCon Main` Master Page end export its definition. Navigate to `widgetInstances` again. You should see additional configuration property `siteNavigationMenuId` that specifies the Site Navigation Menu for the widget: 
+8. Publish `DevCon Main` Master Page end export its definition. Navigate to `widgetInstances` section. An additional configuration property `siteNavigationMenuId` should be added to specifies the Site Navigation Menu for the navigation widget: 
 
 ```json
 {
@@ -111,7 +111,7 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/mas
 }
 ```
 
-But the problem is missing placeholder for it. Even in Liferay sources in some places it's [hard-coded](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-raylife-d2c/src/main/resources/site-initializer/layout-page-templates/master-pages/public-quote/page-definition.json#L37), in other ones - a hack with fragment configuration is used. 
+But the problem here is missing placeholder for it. Even in Liferay sources in some places it's [hard-coded](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-raylife-d2c/src/main/resources/site-initializer/layout-page-templates/master-pages/public-quote/page-definition.json#L37), in other ones - a hack with fragment configuration is used. 
 
 In the next chapter you'll see how you can customize the site initializing process to workaround issues like this.
 
