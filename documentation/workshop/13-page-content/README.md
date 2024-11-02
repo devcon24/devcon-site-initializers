@@ -81,5 +81,5 @@ _**Note**: you can use prepared [page-definition.json](../../../exercises/exerci
 
 3.6. Redeploy Site Initializer module and run Synchronize. Make sure, content changes are the same as before after synchronization. 
 
-[12. Customization](../12-customization/README.md) | 
+[12. Customization](../12-customization/README.md) | [14. Documents](../14-documents/README.md) 
 
