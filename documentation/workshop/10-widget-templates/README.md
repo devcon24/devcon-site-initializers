@@ -62,12 +62,17 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
   
   ![02.png](images/02.png)
   
-7. Choose `DevCon Header Navigation` display template:
+7. Choose `DevCon Header Navigation` display template and save configuration:
 
   ![03.png](images/03.png)
 
-8. Select `DevCon Footer Navigation` for footer navigation in the same way.
+8. Select `DevCon Footer Navigation` for footer navigation in the same way:
 
-  _**Notes**: widget templates are applied "automatically" because the Header/Footer fragments pass the `displayStyle` value to portlet preferences of the embedded navigation widget. Styling is applied from the Theme CSS Client Extension deployed previously._ 
+  ![img.png](img.png)
+
+  _**Note**: styling for navigation is applied from the Theme CSS Client Extension deployed previously._
+
+9. Publish `DevCon Main` Master Page end export its definition.
+10. 
 
 [<< 9. Pages Definition](../09-layouts/README.md) | [11. Navigation Menus >>](../11-navigation-menus/README.md)

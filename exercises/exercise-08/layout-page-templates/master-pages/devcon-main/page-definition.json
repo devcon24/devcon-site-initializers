@@ -37,10 +37,6 @@
           ],
           "indexed": true,
           "widgetInstances": [
-            {
-              "widgetConfig": {},
-              "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
-            }
           ]
         },
         "type": "Fragment"
@@ -103,10 +99,6 @@
           ],
           "indexed": true,
           "widgetInstances": [
-            {
-              "widgetConfig": {},
-              "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
-            }
           ]
         },
         "pageElements": [

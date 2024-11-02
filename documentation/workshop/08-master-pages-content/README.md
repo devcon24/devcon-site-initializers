@@ -86,7 +86,11 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/mas
 - Remove generated `id` elements, e.g. `"id": "9c456897-d60c-6835-e8fe-163e2cc6b74d",`;
 - Replace hard-coded `siteKey` value with `[$GROUP_KEY$]` placeholder;
 - Replace hard-coded Site URL with `[$GROUP_FRIENDLY_URL$]` placeholder.
-![07.png](images/07.png)
+  ![07.png](images/07.png)
+- Eliminate `widgetInstances` section for navigation menus:
+  ![08.png](images/08.png)
+
+  _**Note**: this is required for navigation configuration export later on.
 
 6. Update `page-definition.json` content for DevCon Main using the resulting JSON. 
 7. Repeat the same steps for DevCon Secondary Master Page.
