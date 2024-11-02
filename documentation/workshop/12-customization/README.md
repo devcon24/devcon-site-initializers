@@ -45,7 +45,7 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
 2. You'll see two issues:
 
    ![01.png](images/01.png)
-    1) Site Navigation Menus are not applied (due to a problem described above).
+    1) Site Navigation Menus are not applied (due to a problem described in a previous chapter).
     2) Styling is not following the Style Book definition. This happens, because Theme CSS Client Extension is not applied to Layout Set, due to lack of such configuration.
 
 3. Copy [java](../../../exercises/exercise-12/src/main/java) classes from `exercise-12` to [java](../../../modules/devcon-site-initializer/src/main/java) folder in Site Initializer module.
