@@ -115,4 +115,4 @@ But the problem is missing placeholder for it. Even in Liferay sources in some p
 
 In the next chapter you'll see how you can customize the site initializing process to workaround issues like this.
 
-[README.md](../10-widget-templates/README.md) | 
+[README.md](../10-widget-templates/README.md) | [12. Customization](../12-customization/README.md)

@@ -25,3 +25,5 @@
 [10. Widget Templates](10-widget-templates/README.md)
 
 [11. Navigation Menus](11-navigation-menus/README.md)
+
+[12. Customization](12-customization/README.md)
