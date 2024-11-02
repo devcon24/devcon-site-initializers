@@ -61,12 +61,14 @@ The Home and Speakers ones will be used for content setup later on, other ones -
 
 1. Copy [layouts](../../../exercises/exercise-09/layouts) from exercise-09 to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
 2. Analyze page definitions.
-2. Redeploy Site Initializer module and run Synchronization.
-3. Make sure Pages created successfully:
+3. Redeploy Site Initializer module and run Synchronization.
+4. Make sure Pages created successfully:
 
   ![01.png](images/01.png)
+
+5. Make sure Navigate Menus are displaying as well (even though not styled yet):
 
   ![02.png](images/02.png)
 
 
-[<< 8. Master Pages Content](../08-master-pages-content/README.md) | 
+[<< 8. Master Pages Content](../08-master-pages-content/README.md) | [10. Widget Templates >>](../10-widget-templates/README.md)
