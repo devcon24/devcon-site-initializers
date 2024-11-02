@@ -68,7 +68,18 @@ _Important: make sure to check both `Save Inline Content` and `Save Mapping Conf
 
 ![08.png](images/08.png)
 
+3.5. Adjust the JSON definition:
+- Remove generated `id` elements, e.g. `"id": "9c456897-d60c-6835-e8fe-163e2cc6b74d",`;
+- Replace hard-coded `siteKey` value with `[$GROUP_KEY$]` placeholder;
+- Replace hard-coded Site URL with `[$GROUP_FRIENDLY_URL$]` placeholder.
 
+3.5. Put adjusted JSON inside `pageElements` array in `page-definition.json`:
+
+![09.png](images/09.png)
+
+_**Note**: you can use prepared [page-definition.json](../../../exercises/exercise-13/layouts/1_home/page-definition.json) from `exercise-13`._
+
+3.6. Redeploy Site Initializer module and run Synchronize. Make sure, content changes are the same as before after synchronization. 
 
 [12. Customization](../12-customization/README.md) | 
 
