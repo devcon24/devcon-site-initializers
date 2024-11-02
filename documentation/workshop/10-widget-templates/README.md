@@ -64,15 +64,36 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
   
 7. Choose `DevCon Header Navigation` display template and save configuration:
 
-  ![03.png](images/03.png)
+    ![03.png](images/03.png)
 
 8. Select `DevCon Footer Navigation` for footer navigation in the same way:
 
-  ![04.png](images/04.png)
-
-  _**Note**: styling for navigation is applied from the Theme CSS Client Extension deployed previously._
+   ![04.png](images/04.png)
+   _**Note**: styling for navigation is applied from the Theme CSS Client Extension deployed previously._
 
 9. Publish `DevCon Main` Master Page end export its definition.
-10. 
+
+10. Find `widgetInstances` sections in the exported JSON, e.g.:
+
+
+     "widgetInstances": [
+       {
+         "widgetConfig": {
+           "siteNavigationMenuId": "0",
+           "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV",
+           "displayDepth": "0",
+           "displayStyleGroupKey": "DevCon 2024",
+           "siteNavigationMenuType": "-1",
+           "rootMenuItemType": "absolute",
+           "expandedLevels": "auto",
+           "rootMenuItemLevel": "0",
+           "displayStyleGroupId": "35968"
+         },
+         "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+       }
+     ]
+
+9. Replace values for `displayStyleGroupKey` and `displayStyleGroupId` with placeholders: `[$GROUP_KEY$]` / `[$GROUP_ID$]`.
+10. Update `widgetInstances` in 
 
 [<< 9. Pages Definition](../09-layouts/README.md) | [11. Navigation Menus >>](../11-navigation-menus/README.md)
