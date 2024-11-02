@@ -59,4 +59,6 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
 
     @Reference(target = "(component.name=com.liferay.site.initializer.extender.web.internal.portlet.action.SynchronizeSiteInitializerMVCActionCommand)")
     private MVCActionCommand mvcActionCommand;
+
+    private static final Log _log = LogFactoryUtil.getLog(SynchronizeSiteInitializerMVCActionCommandOverride.class);
 }

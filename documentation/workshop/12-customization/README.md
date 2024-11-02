@@ -48,14 +48,24 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
     1) Site Navigation Menus are not applied (due to a problem described in a previous chapter).
     2) Styling is not following the Style Book definition. This happens, because Theme CSS Client Extension is not applied to Layout Set, due to lack of such configuration.
 
-3. Copy [java](../../../exercises/exercise-12/src/main/java) classes from `exercise-12` to [java](../../../modules/devcon-site-initializer/src/main/java) folder in Site Initializer module.
-4. Analyze Java code for Site Initializer customization.
+
+3. Inside `widgetInstances` section add `siteNavigationMenuId` property with a custom placeholder value:
+
+   - Header: `"siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_HEADER_NAV_MENU$]",`
+   - Footer: `"siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_FOOTER_NAV_MENU$]"`
+   
+      Note: see updated [page-definition.json](../../../exercises/exercise-12/layout-page-templates/master-pages/devcon-main/page-definition.json) in `exercise-12`.
+
+4. Copy [java](../../../exercises/exercise-12/src/main/java) classes from `exercise-12` to [java](../../../modules/devcon-site-initializer/src/main/java) folder in Site Initializer module. 
+5. Analyze Java code for Site Initializer customization.
 
    ![02.png](images/02.png)
    Here `siteNavigationMenuId` is set to portlet preferences, and also LayoutSet is linked with a Theme CSS Client Extension for correct Style Book configuration. 
 
-5. Re-deploy Site Initializer module.
-6. Create a new site from `DevCon` Site Initializer. The issues mentioned in `2.` should still be there.
-7. Run `Synchronize` action. The issues should be fixed due to customization applied.
+6. Re-deploy Site Initializer module.
+7. Create a new site from `DevCon` Site Initializer. The issues mentioned in `2.` should still be there.
+8. Run `Synchronize` action. The issues should be fixed due to customization applied:
+
+   ![03.png](images/03.png)
 
 [<< 11. Navigation Menus](../11-navigation-menus/README.md) | 

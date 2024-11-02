@@ -5,6 +5,8 @@ import com.devcon.site.initializer.service.SiteInitializerService;
 import com.liferay.client.extension.model.ClientExtensionEntryRel;
 import com.liferay.client.extension.service.ClientExtensionEntryRelLocalService;
 import com.liferay.counter.kernel.service.CounterLocalService;
+import com.liferay.layout.page.template.model.LayoutPageTemplateEntry;
+import com.liferay.layout.page.template.service.LayoutPageTemplateEntryLocalService;
 import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.dao.orm.DynamicQuery;
 import com.liferay.portal.kernel.dao.orm.RestrictionsFactoryUtil;
@@ -13,83 +15,126 @@ import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.model.Group;
 import com.liferay.portal.kernel.model.LayoutSet;
 import com.liferay.portal.kernel.model.PortletPreferenceValue;
+import com.liferay.portal.kernel.model.PortletPreferences;
 import com.liferay.portal.kernel.service.GroupLocalService;
 import com.liferay.portal.kernel.service.PortletPreferenceValueLocalService;
+import com.liferay.portal.kernel.service.PortletPreferencesLocalService;
 import com.liferay.portal.kernel.service.ServiceContext;
 import com.liferay.portal.kernel.util.ListUtil;
 import com.liferay.portal.kernel.util.Portal;
-import com.liferay.portal.kernel.util.Validator;
+import com.liferay.portal.kernel.util.PortletKeys;
+import com.liferay.site.navigation.constants.SiteNavigationMenuPortletKeys;
 import com.liferay.site.navigation.model.SiteNavigationMenu;
 import com.liferay.site.navigation.service.SiteNavigationMenuLocalService;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Component(service = SiteInitializerService.class)
 public class SiteInitializerServiceImpl implements SiteInitializerService {
 
-    public static final String HEADER_MENU_DDM_TEMPLATE_KEY = "DEVCON_HEADER_NAV";
-    public static final String HEADER_SITE_NAVIGATION_MENU_NAME = "DEVCON_HEADER_NAV_MENU";
-
-    public static final String FOOTER_MENU_DDM_TEMPLATE_KEY = "DEVCON_FOOTER_NAV";
-    public static final String FOOTER_SITE_NAVIGATION_MENU_NAME = "DEVCON_FOOTER_NAV_MENU";
-
     public static final String CX_TYPE = "themeCSS";
     public static final String CX_EXTERNAL_REFERENCE_CODE = "LXC:devcon-site-initializer-theme-css";
-
 
     // ---------------------------- Site Navigation Menu ---------------------------------------------------------------
 
     @Override
     public void verifySiteNavigationMenuIds(long groupId) {
-        verifySiteNavigationMenuId(groupId, HEADER_MENU_DDM_TEMPLATE_KEY, HEADER_SITE_NAVIGATION_MENU_NAME);
-        verifySiteNavigationMenuId(groupId, FOOTER_MENU_DDM_TEMPLATE_KEY, FOOTER_SITE_NAVIGATION_MENU_NAME);
-    }
 
-    private void verifySiteNavigationMenuId(long groupId, String ddmTemplateKey, String navigationMenuName) {
-        String displayStylePreference = "ddmTemplate_" + ddmTemplateKey;
-        DynamicQuery displayStyleQuery = portletPreferenceValueLocalService.dynamicQuery();
-        displayStyleQuery.add(RestrictionsFactoryUtil.eq("name", "displayStyle"));
-        displayStyleQuery.add(RestrictionsFactoryUtil.eq("smallValue", displayStylePreference));
-        List<PortletPreferenceValue> displayStylePrefValues = portletPreferenceValueLocalService.dynamicQuery(displayStyleQuery);
-        if (ListUtil.isNotEmpty(displayStylePrefValues)) {
-            for (PortletPreferenceValue displayStylePrefValue : displayStylePrefValues) {
-                long companyId = displayStylePrefValue.getCompanyId();
-                long portletPreferencesId = displayStylePrefValue.getPortletPreferencesId();
-                DynamicQuery navMenuQuery = portletPreferenceValueLocalService.dynamicQuery();
-                navMenuQuery.add(RestrictionsFactoryUtil.eq("name", "siteNavigationMenuId"));
-                navMenuQuery.add(RestrictionsFactoryUtil.eq("portletPreferencesId", portletPreferencesId));
-                List<PortletPreferenceValue> navMenuPrefValues = portletPreferenceValueLocalService.dynamicQuery(navMenuQuery);
-                if (ListUtil.isNotEmpty(navMenuPrefValues)) {
-                    for (PortletPreferenceValue navMenuPrefValue : navMenuPrefValues) {
-                        if (Validator.isBlank(navMenuPrefValue.getValue())) {
-                            long siteNavigationMenuId = getSiteNavigationMenuId(groupId, navigationMenuName);
-                            navMenuPrefValue.setValue(String.valueOf(siteNavigationMenuId));
-                            navMenuPrefValue = portletPreferenceValueLocalService.updatePortletPreferenceValue(navMenuPrefValue);
-                            _log.info(String.format("Updated PortletPreferenceValue #%d (%s=%s) for PortletPreference #%d.",
-                                    navMenuPrefValue.getPortletPreferencesId(), "siteNavigationMenuId", siteNavigationMenuId, portletPreferencesId));
+        // Site Navigation Menu IDs Map
+        Map<String, String> siteNavigationMenuIdMap = new HashMap<>();
+        List<SiteNavigationMenu> siteNavigationMenus = siteNavigationMenuLocalService.getSiteNavigationMenus(groupId);
+        for (SiteNavigationMenu siteNavigationMenu : siteNavigationMenus) {
+            String menuName = siteNavigationMenu.getName();
+            String placeholder = String.format("[$SITE_NAVIGATION_MENU_ID:%s$]", menuName);
+            siteNavigationMenuIdMap.put(placeholder, String.valueOf(siteNavigationMenu.getSiteNavigationMenuId()));
+        }
+
+        // Master Pages
+        List<LayoutPageTemplateEntry> layoutPageTemplateEntries = layoutPageTemplateEntryLocalService.getLayoutPageTemplateEntries(groupId);
+        for (LayoutPageTemplateEntry layoutPageTemplateEntry : layoutPageTemplateEntries) {
+            List<PortletPreferences> portletPreferences = portletPreferencesLocalService.getPortletPreferences(0, PortletKeys.PREFS_OWNER_TYPE_LAYOUT, layoutPageTemplateEntry.getPlid());
+            for (PortletPreferences portletPreference : portletPreferences) {
+                String portletId = portletPreference.getPortletId();
+                long companyId = portletPreference.getCompanyId();
+                // Navigation Menu Portlet Preferences
+                if (portletId.startsWith(SiteNavigationMenuPortletKeys.SITE_NAVIGATION_MENU)) {
+                    // Group-Level Portlet Preferences
+                    PortletPreferences sitePreferences = portletPreferencesLocalService.fetchPortletPreferences(groupId, PortletKeys.PREFS_OWNER_TYPE_LAYOUT, 0, portletId);
+                    if (sitePreferences == null) {
+                        sitePreferences = portletPreferencesLocalService.addPortletPreferences(
+                                companyId,
+                                PortletKeys.PREFS_OWNER_TYPE_LAYOUT,
+                                0,
+                                portletPreference.getPlid(),
+                                portletPreference.getPortletId(),
+                                null,
+                                null
+                        );
+                        _log.info(String.format("Saved PortletPreferences #%d.", sitePreferences.getPortletPreferencesId()));
+                    }
+                    long portletPreferencesId = sitePreferences.getPortletPreferencesId();
+                    // Update Portlet Preferences
+                    List<PortletPreferenceValue> originalPrefValues = getPortletPreferenceValues(portletPreference.getPortletPreferencesId());
+                    for (PortletPreferenceValue originalPrefValue : originalPrefValues) {
+                        String preferenceValue = originalPrefValue.getValue();
+                        if ("siteNavigationMenuId".equals(originalPrefValue.getName())) {
+                            if (siteNavigationMenuIdMap.containsKey(preferenceValue)) {
+                                String mappedValue = siteNavigationMenuIdMap.get(preferenceValue);
+                                originalPrefValue.setValue(mappedValue);
+                                originalPrefValue = portletPreferenceValueLocalService.updatePortletPreferenceValue(originalPrefValue);
+                                _log.info(String.format("Updated siteNavigationMenuId PortletPreferenceValue from %s to %s.", preferenceValue, mappedValue));
+                            }
+                        }
+                        PortletPreferenceValue sitePrefValue = getPortletPreferenceValue(portletPreferencesId, originalPrefValue.getName(), originalPrefValue.getValue());
+                        if (sitePrefValue == null) {
+                            sitePrefValue = portletPreferenceValueLocalService.createPortletPreferenceValue(counterLocalService.increment());
+                            sitePrefValue.setCompanyId(companyId);
+                            sitePrefValue.setPortletPreferencesId(portletPreferencesId);
+                            sitePrefValue.setName(originalPrefValue.getName());
+                            sitePrefValue.setValue(originalPrefValue.getValue());
+                            sitePrefValue = portletPreferenceValueLocalService.updatePortletPreferenceValue(sitePrefValue);
+                            _log.info(String.format("Saved PortletPreferenceValue #%d (%s=%s) for PortletPreference #%d.",
+                                    sitePrefValue.getPortletPreferenceValueId(), sitePrefValue.getName(), sitePrefValue.getValue(), portletPreferencesId));
                         }
                     }
-                } else {
-                    long siteNavigationMenuId = getSiteNavigationMenuId(groupId, navigationMenuName);
-                    long portletPreferenceValueId = counterLocalService.increment();
-                    PortletPreferenceValue portletPreferenceValue = portletPreferenceValueLocalService.createPortletPreferenceValue(portletPreferenceValueId);
-                    portletPreferenceValue.setCompanyId(companyId);
-                    portletPreferenceValue.setPortletPreferencesId(portletPreferencesId);
-                    portletPreferenceValue.setName("siteNavigationMenuId");
-                    portletPreferenceValue.setValue(String.valueOf(siteNavigationMenuId));
-                    portletPreferenceValue = portletPreferenceValueLocalService.updatePortletPreferenceValue(portletPreferenceValue);
-                    _log.info(String.format("Saved PortletPreferenceValue #%d (%s=%s) for PortletPreference #%d.",
-                            portletPreferenceValue.getPortletPreferenceValueId(), "siteNavigationMenuId", siteNavigationMenuId, portletPreferencesId));
+                }
+            }
+        }
+
+        // Check remaining preferences
+        DynamicQuery dynamicQuery = portletPreferenceValueLocalService.dynamicQuery();
+        dynamicQuery.add(RestrictionsFactoryUtil.like("smallValue", "[$SITE_NAVIGATION_MENU_ID%"));
+        List<PortletPreferenceValue> results = portletPreferenceValueLocalService.dynamicQuery(dynamicQuery);
+        if (ListUtil.isNotEmpty(results)) {
+            for (PortletPreferenceValue prefResult : results) {
+                String value = prefResult.getValue();
+                if (siteNavigationMenuIdMap.containsKey(value)) {
+                    String mappedValue = siteNavigationMenuIdMap.get(value);
+                    prefResult.setValue(mappedValue);
+                    portletPreferenceValueLocalService.updatePortletPreferenceValue(prefResult);
+                    _log.info(String.format("Updated siteNavigationMenuId PortletPreferenceValue from %s to %s.", value, mappedValue));
                 }
             }
         }
     }
 
-    private long getSiteNavigationMenuId(long groupId, String navMenuName) {
-        SiteNavigationMenu siteNavigationMenu = siteNavigationMenuLocalService.fetchSiteNavigationMenuByName(groupId, navMenuName);
-        return siteNavigationMenu != null ? siteNavigationMenu.getSiteNavigationMenuId() : 0;
+    private PortletPreferenceValue getPortletPreferenceValue(long portletPreferencesId, String name, String value) {
+        DynamicQuery dynamicQuery = portletPreferenceValueLocalService.dynamicQuery();
+        dynamicQuery.add(RestrictionsFactoryUtil.eq("portletPreferencesId", portletPreferencesId));
+        dynamicQuery.add(RestrictionsFactoryUtil.eq("name", name));
+        dynamicQuery.add(RestrictionsFactoryUtil.eq("smallValue", value));
+        List<PortletPreferenceValue> results = portletPreferenceValueLocalService.dynamicQuery(dynamicQuery);
+        return ListUtil.isNotEmpty(results) ? results.get(0) : null;
+    }
+
+    private List<PortletPreferenceValue> getPortletPreferenceValues(long portletPreferencesId) {
+        DynamicQuery dynamicQuery = portletPreferenceValueLocalService.dynamicQuery();
+        dynamicQuery.add(RestrictionsFactoryUtil.eq("portletPreferencesId", portletPreferencesId));
+        return portletPreferenceValueLocalService.dynamicQuery(dynamicQuery);
     }
 
     // ---------------------------- Client Extension for LayoutSet ----------------------------
@@ -137,9 +182,14 @@ public class SiteInitializerServiceImpl implements SiteInitializerService {
     private ClientExtensionEntryRelLocalService clientExtensionEntryRelLocalService;
 
     @Reference
+    private LayoutPageTemplateEntryLocalService layoutPageTemplateEntryLocalService;
+
+    @Reference
     private CounterLocalService counterLocalService;
     @Reference
     private SiteNavigationMenuLocalService siteNavigationMenuLocalService;
+    @Reference
+    private PortletPreferencesLocalService portletPreferencesLocalService;
     @Reference
     private PortletPreferenceValueLocalService portletPreferenceValueLocalService;
 

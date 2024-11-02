@@ -39,7 +39,7 @@
           "widgetInstances": [
             {
               "widgetConfig": {
-                "siteNavigationMenuId": "0",
+                "siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_HEADER_NAV_MENU$]",
                 "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV",
                 "displayDepth": "0",
                 "displayStyleGroupKey": "[$GROUP_KEY$]",
@@ -115,7 +115,7 @@
           "widgetInstances": [
             {
               "widgetConfig": {
-                "siteNavigationMenuId": "0",
+                "siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_FOOTER_NAV_MENU$]",
                 "displayStyle": "ddmTemplate_DEVCON_FOOTER_NAV",
                 "displayDepth": "0",
                 "displayStyleGroupKey": "[$GROUP_KEY$]",
