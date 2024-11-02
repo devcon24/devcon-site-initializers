@@ -68,7 +68,7 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 
 8. Select `DevCon Footer Navigation` for footer navigation in the same way:
 
-  ![img.png](img.png)
+  ![04.png](images/04.png)
 
   _**Note**: styling for navigation is applied from the Theme CSS Client Extension deployed previously._
 
