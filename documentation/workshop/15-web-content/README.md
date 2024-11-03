@@ -41,7 +41,7 @@ In the descriptor file you need to specify the structure name and structure defi
 
 **2. Define Web Content Template**
 
-Web Content Templates are in `ddm-templates` folder. For each template a subfolder is created with the following files:
+Web Content Templates are defined in `ddm-templates` folder. For each template a subfolder is created with the following files:
 - `ddm-template.ftl` - the template file with Freemarker code for the template;
 - `ddm-template.json` - the template descriptor, where you can specify the template name and key, and also the structure key, sample:
 ```json 
@@ -66,9 +66,22 @@ Web Content Folder is defined in `[folder-name].metadata.json` file inside the `
 }
 ```
 
-For each Web Content Folder created a subfolder inside `journal-articles` for defining appropriate web contents. Web Content Articles are defined using a pair of files:
-- `<web-content>.json` - web content descriptor;
-- `<web-content>.xml` - web content definition.
+For each Web Content Folder a subfolder inside `journal-articles` should be created. Web Content Articles are defined inside the subfolder using a pair of files:
+- `<web-content>.json` - the web content descriptor, sample:
+```json
+{
+  "articleId": "GOOGLE-CLOUD",
+  "assetCategoryERCs": [
+  ],
+  "ddmStructureKey": "SPONSOR",
+  "ddmTemplateKey": "SPONSOR",
+  "folder": "Sponsors",
+  "name": "Google Cloud"
+}
+```
+- `<web-content>.xml` - the web content definition XML.
+
+
 
 
 _Examples in Liferay sources:_
