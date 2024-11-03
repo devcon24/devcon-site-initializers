@@ -10,7 +10,7 @@ Learn how you can define Web Content Structures, Templates, Folders and Articles
 
 In the context of this demo Web Content is used for Sponsors section on Home page.
 
-A Sponsor structure should be created with required information, a list of Sponsor articles should be created and displayed in a Collection Display.  
+A Sponsor structure should be created with required fields (sponsor name, sponsor type, sponsor logo and sponsor link). A list of Sponsor articles should be created and displayed in a Collection Display.  
 
 ## Overview
 
@@ -81,17 +81,36 @@ For each Web Content Folder a subfolder inside `journal-articles` should be crea
 ```
 - `<web-content>.xml` - the web content definition XML.
 
+## Practice
+
+To define content descriptors for web content structures, templates and articles you can create them on portal and then export data for content descriptors. 
+
+### 1. Structure Definition
+
+1.1. Navigate to Content & Data → Web Content → Structures. Click `New` button to add a new Structure:
+![01.png](images/01.png)
+
+1.2. Specify the Name (`Sponsor`) and define the following fields:
+
+|             Type |        Label | Field Reference |                                                          Options |
+|-----------------:|-------------:|-----------------|-----------------------------------------------------------------:|
+|             Text | Sponsor Name | sponsorName     |                                                                  |
+| Select from List | Sponsor Type | sponsorType     | Diamond(diamond), Platinum(platinum), Gold(gold), Silver(silver) | 
+|            Image | Sponsor Logo | sponsorLogo     |                                                                  |
+|             Text | Sponsor Link | sponsorLink     |                                                                  |
+
+![02.png](images/02.png)
+
+Save the structure.
 
 
+## References
 
 _Examples in Liferay sources:_
-- Structure: https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/ddm-structures/blog-structure.xml 
+- Structure: https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/ddm-structures/blog-structure.xml
 - Template: https://github.com/liferay/liferay-portal/tree/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/ddm-templates/blog-entry
 - Folder: https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/journal-articles/blog-entries.metadata.json
 - Articles: https://github.com/liferay/liferay-portal/tree/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/journal-articles/blog-entries
 
-## Practice
-
-Todo
 
 [<< 14. Documents](../14-documents/README.md) | [16. Collections >>](../16-collections/README.md)
