@@ -31,3 +31,9 @@
 [13. Page Content](13-page-content/README.md)
 
 [14. Documents](14-documents/README.md)
+
+[15. Web Content, Structures and Templates](15-web-content/README.md)
+
+[16. Collections](16-collections/README.md)
+
+[17. Objects](17-objects/README.md)
