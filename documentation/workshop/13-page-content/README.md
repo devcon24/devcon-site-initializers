@@ -22,7 +22,7 @@ The JSON for page definition should be cleaned up from environment-specific data
 
 ## Practice
 
-### 1. Define Additional Fragments
+### 1. Additional Fragments Definition
 
 1.1. Copy [devcon-homepage-banner](../../../exercises/exercise-13/fragments/group/devcon/devcon-homepage-banner) and [devcon-ticket-prices](../../../exercises/exercise-13/fragments/group/devcon/devcon-ticket-prices) fragments from `exercise-13` to Site Initializer module.
 
