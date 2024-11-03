@@ -146,7 +146,18 @@ _**Note**: use can use [sponsor-structure.xml](../../../exercises/exercise-15/dd
 2.4. Navigate to Content & Data → Web Content → Templates. Make sure `Sponsor` template is created:
 ![05.png](images/05.png)
 
+### 3. Journal Folder Definition
 
+//todo;
+
+### 4. Articles Definition
+
+4.1. Copy [documents/group/Sponsors](../../../exercises/exercise-15/documents/group/Sponsors) folder from `exercise-15` to `site-initializer/documents/group` folder in Site Initializer module. 
+
+4.2. Redeploy Site Initializer and run Synchronize. Make sure Sponsors DL Folder is created:
+![06.png](images/06.png)
+
+3.3. Navigate to Content & Data → Web Content → Templates.
 
 ## References
 
