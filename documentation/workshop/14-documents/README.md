@@ -83,7 +83,7 @@ Replace URL value with placeholder `[$DOCUMENT_URL:/file-path$]`:
 
 `[$DOCUMENT_URL:/site-initializer/documents/group/Venue/venue-01.png$]`
 
-Note: you can use prepared `[page-definition.json](../../../exercises/exercise-14/layouts/1_home/page-definition.json)` file from `exercise-14`.
+Note: you can use prepared [page-definition.json](../../../exercises/exercise-14/layouts/1_home/page-definition.json) file from `exercise-14`.
 
 4.5. Update the `pageElements` root array in `page-definition.json` with a prepared JSON.
 
