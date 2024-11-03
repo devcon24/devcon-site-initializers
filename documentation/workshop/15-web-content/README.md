@@ -120,7 +120,7 @@ Save the structure.
 </root>
 ```
 
-2.1. Copy the structure definition JSON from the database (`DDMStructure.definition`) to the definition tag, inside the CDATA section.
+2.1. Copy the structure definition JSON from the database (`DDMStructure.definition`) to the `definition` tag, inside the `CDATA` section.
 
 _**Note**: Web Content Structures have `Export as JSON` action, but the exported file format is not compatible with Site Initializer._
 _You can get a compatible JSON directly from a Database, from the `definition` column of the `DDMStructure` table._
@@ -132,6 +132,20 @@ _You can get a compatible JSON directly from a Database, from the `definition` c
 2.4. Delete the manually created structure.
 
 2.5. Redeploy Site Initializer and run Synchronize. Make sure Structure created as expected. 
+
+_**Note**: use can use [sponsor-structure.xml](../../../exercises/exercise-15/ddm-structures/sponsor-structure.xml) file from `exercise-15`._
+
+### 2. Template Definition
+
+2.1. Copy [ddm-templates/sponsor](../../../exercises/exercise-15/ddm-templates/sponsor) directory from `exercise-15` to Site Initializer.
+
+2.2. Check `ddm-template.ftl` and `ddm-template.json` files.
+
+2.3. Redeploy Site Initializer and run Synchronize.
+
+2.4. Navigate to Content & Data → Web Content → Templates. Make sure `Sponsor` template is created:
+![05.png](images/05.png)
+
 
 
 ## References

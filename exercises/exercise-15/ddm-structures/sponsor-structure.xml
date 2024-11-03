@@ -18,9 +18,8 @@
                   "defaultLanguageId": "en_US",
                   "fields": [
                     {
-                      "name": "sponsorName",
-                      "fieldReference": "sponsorName",
                       "labelAtStructureLevel": true,
+                      "ddmDataProviderInstanceId": [],
                       "predefinedValue": {
                         "en_US": ""
                       },
@@ -29,18 +28,16 @@
                       },
                       "requireConfirmation": false,
                       "type": "text",
-                      "showLabel": true,
                       "required": false,
+                      "showLabel": true,
                       "displayStyle": "singleline",
-                      "requiredErrorMessage": {
-                        "en_US": ""
-                      },
-                      "objectFieldName": "",
+                      "ddmDataProviderInstanceOutput": [],
                       "repeatable": false,
                       "nativeField": false,
                       "confirmationLabel": {
                         "en_US": ""
                       },
+                      "fieldReference": "sponsorName",
                       "tip": {
                         "en_US": ""
                       },
@@ -51,38 +48,46 @@
                       "direction": [
                         "vertical"
                       ],
+                      "hideField": false,
                       "confirmationErrorMessage": {
                         "en_US": ""
                       },
-                      "hideField": false,
+                      "autocomplete": false,
                       "dataType": "string",
                       "readOnly": false,
                       "label": {
                         "en_US": "Sponsor Name"
                       },
-                      "fieldNamespace": "",
-                      "visibilityExpression": "",
                       "indexType": "keyword",
-                      "localizable": true
+                      "visibilityExpression": "",
+                      "fieldNamespace": "",
+                      "name": "sponsorName",
+                      "localizable": true,
+                      "dataSourceType": ""
                     },
                     {
-                      "name": "sponsorType",
-                      "fieldReference": "sponsorType",
                       "labelAtStructureLevel": true,
                       "ddmDataProviderInstanceId": [],
+                      "dataType": "string",
                       "predefinedValue": {
                         "en_US": "[]"
                       },
-                      "type": "select",
-                      "showLabel": true,
-                      "required": false,
-                      "requiredErrorMessage": {
-                        "en_US": ""
+                      "multiple": false,
+                      "readOnly": false,
+                      "label": {
+                        "en_US": "Sponsor Type"
                       },
-                      "objectFieldName": "",
+                      "type": "select",
+                      "required": false,
+                      "showLabel": true,
+                      "indexType": "keyword",
+                      "visibilityExpression": "",
+                      "fieldNamespace": "",
                       "alphabeticalOrder": false,
                       "ddmDataProviderInstanceOutput": [],
                       "repeatable": false,
+                      "fieldReference": "sponsorType",
+                      "name": "sponsorType",
                       "options": [
                         {
                           "reference": "diamond",
@@ -114,26 +119,15 @@
                         }
                       ],
                       "nativeField": false,
+                      "localizable": true,
                       "tip": {
                         "en_US": ""
                       },
-                      "dataType": "string",
-                      "multiple": false,
-                      "readOnly": false,
-                      "label": {
-                        "en_US": "Sponsor Type"
-                      },
-                      "fieldNamespace": "",
-                      "visibilityExpression": "",
-                      "indexType": "keyword",
-                      "localizable": true,
                       "dataSourceType": [
                         "manual"
                       ]
                     },
                     {
-                      "name": "sponsorLogo",
-                      "fieldReference": "sponsorLogo",
                       "dataType": "image",
                       "predefinedValue": {
                         "en_US": "{}"
@@ -143,26 +137,23 @@
                         "en_US": "Sponsor Logo"
                       },
                       "type": "image",
-                      "showLabel": true,
                       "required": false,
-                      "fieldNamespace": "",
-                      "requiredErrorMessage": {
-                        "en_US": ""
-                      },
-                      "visibilityExpression": "",
+                      "showLabel": true,
                       "indexType": "text",
-                      "objectFieldName": "",
+                      "visibilityExpression": "",
+                      "fieldNamespace": "",
                       "repeatable": false,
                       "requiredDescription": true,
+                      "name": "sponsorLogo",
                       "localizable": true,
+                      "fieldReference": "sponsorLogo",
                       "tip": {
                         "en_US": ""
                       }
                     },
                     {
-                      "name": "sponsorLink",
-                      "fieldReference": "sponsorLink",
                       "labelAtStructureLevel": true,
+                      "ddmDataProviderInstanceId": [],
                       "predefinedValue": {
                         "en_US": ""
                       },
@@ -171,18 +162,16 @@
                       },
                       "requireConfirmation": false,
                       "type": "text",
-                      "showLabel": true,
                       "required": false,
+                      "showLabel": true,
                       "displayStyle": "singleline",
-                      "requiredErrorMessage": {
-                        "en_US": ""
-                      },
-                      "objectFieldName": "",
+                      "ddmDataProviderInstanceOutput": [],
                       "repeatable": false,
                       "nativeField": false,
                       "confirmationLabel": {
                         "en_US": ""
                       },
+                      "fieldReference": "sponsorLink",
                       "tip": {
                         "en_US": ""
                       },
@@ -193,23 +182,26 @@
                       "direction": [
                         "vertical"
                       ],
+                      "hideField": false,
                       "confirmationErrorMessage": {
                         "en_US": ""
                       },
-                      "hideField": false,
+                      "autocomplete": false,
                       "dataType": "string",
                       "readOnly": false,
                       "label": {
                         "en_US": "Sponsor Link"
                       },
-                      "fieldNamespace": "",
-                      "visibilityExpression": "",
                       "indexType": "keyword",
-                      "localizable": true
+                      "visibilityExpression": "",
+                      "fieldNamespace": "",
+                      "name": "sponsorLink",
+                      "localizable": true,
+                      "dataSourceType": ""
                     }
                   ]
                 }
-			]]>
+         ]]>
         </definition>
     </structure>
 </root>
