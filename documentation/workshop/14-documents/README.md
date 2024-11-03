@@ -75,7 +75,7 @@ Replace values for `classPK` with placeholder `[#DOCUMENT_FILE_ENTRY_ID:/file-pa
 
 `"[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-01.png#]"`
 
-4.4. Find sections with hard-coded URL for `DevCon Venue` fragment (which uses direct source for the document):
+4.4. Find a section with hard-coded URL for `DevCon Venue` fragment (which uses direct source for the document):
 
 ![08.png](images/08.png)
 
