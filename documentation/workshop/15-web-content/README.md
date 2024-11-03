@@ -85,7 +85,7 @@ For each Web Content Folder a subfolder inside `journal-articles` should be crea
 
 To define content descriptors for web content structures, templates and articles you can create them on portal and then export data for content descriptors. 
 
-### 1. Structure Definition
+### 1. Structure Creation
 
 1.1. Navigate to Content & Data → Web Content → Structures. Click `New` button to add a new Structure:
 ![01.png](images/01.png)
@@ -102,6 +102,36 @@ To define content descriptors for web content structures, templates and articles
 ![02.png](images/02.png)
 
 Save the structure.
+
+### 2. Structure Definition
+
+2.1. Create a `ddm-structures` folder inside `site-initializer`, and create a `sponsor-structure.xml` XML file with the following structure:
+```xml
+<?xml version="1.0"?>
+<root>
+   <structure>
+      <name>Sponsor</name>
+      <description></description>
+      <definition>
+         <![CDATA[
+         ]]>
+      </definition>
+   </structure>
+</root>
+```
+
+2.1. Copy the structure definition JSON from the database (`DDMStructure.definition`) to the definition tag, inside the CDATA section.
+
+_**Note**: Web Content Structures have `Export as JSON` action, but the exported file format is not compatible with Site Initializer._
+_You can get a compatible JSON directly from a Database, from the `definition` column of the `DDMStructure` table._
+![03.png](images/03.png)
+
+2.3. Adjust auto-generated `name` attributes to have the same values as `fieldReference`. Also, adjust `value` attributes for options to have the same values as `reference`:
+![04.png](images/04.png)
+
+2.4. Delete the manually created structure.
+
+2.5. Redeploy Site Initializer and run Synchronize. Make sure Structure created as expected. 
 
 
 ## References
