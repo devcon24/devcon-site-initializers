@@ -13,7 +13,7 @@ Those images can be Document & Media documents, initialized with the Site Initia
 
 ## Overview
 
-Documents in Site Initializer are defined inside `documents` folder. Site-scoped documents should be sored inside `group` subfolder, global documents - inside `company` one.
+Documents in Site Initializer are defined inside `documents` folder. Site-scoped documents should be stored inside the `group` subfolder, global documents - inside the `company` one.
 
 Inside the `group`/`company` subfolder the documents and folders are defined.
 
@@ -31,7 +31,7 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 
 1.2. Redeploy Site Initializer module and run Synchronize. 
 
-1.3. Navigate to Content & Data → Document and Media. Make sure `Gallery` and `Venue` Folders have been created with appropriate files inside.
+1.3. Navigate to Content & Data → Document and Media. Make sure `Gallery` and `Venue` Folders created with appropriate files inside.
 
 ![02.png](images/02.png)  
 
@@ -61,6 +61,32 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 
 ### 4. Content Definition
 
+4.1. Save the Fragment Composition for the wrapping container (see previous exercise for detail).
 
+4.2. Export the fragment created from composition, and open the `fragment-composition-definition.json`.
+
+4.2. Adjust the JSON file: remove auto-generated IDs, use `[$GROUP_KEY$]` / `[$GROUP_FRIENDLY_URL$]` placeholders for Site Key and Friendly URL.
+
+4.3. Find sections with hard-coded `classPK` for `DevCon Gallery` fragment (which uses mapping source for documents):
+
+![07.png](images/07.png)
+
+Replace values for `classPK` with placeholder `[#DOCUMENT_FILE_ENTRY_ID:/file-path#]`, sample: 
+
+`"[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-01.png#]"`
+
+4.4. Find sections with hard-coded URL for `DevCon Venue` fragment (which uses direct source for the document):
+
+![08.png](images/08.png)
+
+Replace URL value with placeholder `[$DOCUMENT_URL:/file-path$]`:
+
+`[$DOCUMENT_URL:/site-initializer/documents/group/Venue/venue-01.png$]`
+
+Note: you can use prepared `[page-definition.json](../../../exercises/exercise-14/layouts/1_home/page-definition.json)` file from `exercise-14`.
+
+4.5. Update the `pageElements` root array in `page-definition.json` with a prepared JSON.
+
+4.6. Redeploy Site Initializer module and run Synchronize. Make sure all content changes are in place. 
 
 [<< 13. Page Content](../13-page-content/README.md) |

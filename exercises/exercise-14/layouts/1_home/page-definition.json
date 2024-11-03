@@ -10,318 +10,304 @@
           {
             "definition": {
               "indexed": true,
-              "layout": {}
+              "layout": {
+                "widthType": "Fixed"
+              }
             },
             "pageElements": [
               {
                 "definition": {
-                  "indexed": true,
-                  "layout": {
-                    "widthType": "Fixed"
-                  }
+                  "fragment": {
+                    "key": "devcon-homepage-banner",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {},
+                  "fragmentFields": [
+                    {
+                      "id": "banner-header",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "banner-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "/web[$GROUP_FRIENDLY_URL$]/registration"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "banner-text",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "banner-title",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    }
+                  ],
+                  "indexed": true
                 },
-                "pageElements": [
-                  {
-                    "definition": {
-                      "fragment": {
-                        "key": "devcon-homepage-banner",
-                        "siteKey": "[$GROUP_KEY$]"
-                      },
-                      "fragmentConfig": {},
-                      "fragmentFields": [
-                        {
-                          "id": "banner-header",
-                          "value": {
-                            "fragmentLink": {}
-                          }
-                        },
-                        {
-                          "id": "banner-link",
-                          "value": {
-                            "fragmentLink": {
-                              "value": {
-                                "href": {
-                                  "value": "/web[$GROUP_FRIENDLY_URL$]/registration"
-                                }
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "banner-text",
-                          "value": {
-                            "fragmentLink": {}
-                          }
-                        },
-                        {
-                          "id": "banner-title",
-                          "value": {
-                            "fragmentLink": {}
-                          }
-                        }
-                      ],
-                      "indexed": true
-                    },
-                    "type": "Fragment"
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-gallery",
+                    "siteKey": "[$GROUP_KEY$]"
                   },
-                  {
-                    "definition": {
-                      "fragment": {
-                        "key": "devcon-gallery",
-                        "siteKey": "[$GROUP_KEY$]"
-                      },
-                      "fragmentConfig": {
-                        "numberOfImages": 4
-                      },
-                      "fragmentFields": [
-                        {
-                          "id": "gallery-image-4",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "mapping": {
-                                "fieldKey": "FileEntry_previewImage",
-                                "itemReference": {
-                                  "className": "com.liferay.portal.kernel.repository.model.FileEntry",
-                                  "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-04.png#]"
-                                }
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "gallery-image-3",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "mapping": {
-                                "fieldKey": "FileEntry_previewImage",
-                                "itemReference": {
-                                  "className": "com.liferay.portal.kernel.repository.model.FileEntry",
-                                  "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-03.png#]"
-                                }
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "gallery-image-2",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "mapping": {
-                                "fieldKey": "FileEntry_previewImage",
-                                "itemReference": {
-                                  "className": "com.liferay.portal.kernel.repository.model.FileEntry",
-                                  "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-02.png#]"
-                                }
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "gallery-image-1",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "mapping": {
-                                "fieldKey": "FileEntry_previewImage",
-                                "itemReference": {
-                                  "className": "com.liferay.portal.kernel.repository.model.FileEntry",
-                                  "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-01.png#]"
-                                }
-                              }
-                            }
-                          }
-                        }
-                      ],
-                      "indexed": true
-                    },
-                    "type": "Fragment"
+                  "fragmentConfig": {
+                    "numberOfImages": 4
                   },
-                  {
-                    "definition": {
-                      "fragment": {
-                        "key": "devcon-venue",
-                        "siteKey": "[$GROUP_KEY$]"
-                      },
-                      "fragmentConfig": {},
-                      "fragmentFields": [
-                        {
-                          "id": "devcon-venue-header",
-                          "value": {
-                            "fragmentLink": {}
-                          }
-                        },
-                        {
-                          "id": "devcon-venue-subheader",
-                          "value": {
-                            "fragmentLink": {}
-                          }
-                        },
-                        {
-                          "id": "devcon-venue-address",
-                          "value": {
-                            "fragmentLink": {}
-                          }
-                        },
-                        {
-                          "id": "devcon-venue-image",
-                          "value": {
-                            "fragmentImage": {
-                              "description": {
-                                "value_i18n": {
-                                  "en_US": ""
-                                }
-                              },
-                              "url": {
-                                "value_i18n": {
-                                  "en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Venue/venue-01.png$]"
-                                }
-                              }
-                            },
-                            "fragmentLink": {}
-                          }
-                        },
-                        {
-                          "id": "devcon-venue-link",
-                          "value": {
-                            "fragmentLink": {
-                              "value": {
-                                "href": {
-                                  "value": "https://maps.app.goo.gl/95Z314ZoVtigMkar9"
-                                }
-                              }
+                  "fragmentFields": [
+                    {
+                      "id": "gallery-image-4",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-04.png#]"
                             }
                           }
                         }
-                      ],
-                      "indexed": true
+                      }
                     },
-                    "type": "Fragment"
+                    {
+                      "id": "gallery-image-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-03.png#]"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "gallery-image-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-02.png#]"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "gallery-image-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-01.png#]"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-venue",
+                    "siteKey": "[$GROUP_KEY$]"
                   },
-                  {
-                    "definition": {
-                      "fragment": {
-                        "key": "devcon-ticket-prices",
-                        "siteKey": "[$GROUP_KEY$]"
-                      },
-                      "fragmentConfig": {
-                        "numberOfPrices": 3
-                      },
-                      "fragmentFields": [
-                        {
-                          "id": "ticket-rate-1",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "I Trust You Rate"
-                              }
+                  "fragmentConfig": {},
+                  "fragmentFields": [
+                    {
+                      "id": "devcon-venue-header",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-subheader",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-address",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-image",
+                      "value": {
+                        "fragmentImage": {
+                          "url": {
+                            "value_i18n": {
+                              "en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Venue/venue-01.png$]"
                             }
                           }
                         },
-                        {
-                          "id": "devcon-ticket-prices-header",
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-link",
+                      "value": {
+                        "fragmentLink": {
                           "value": {
-                            "fragmentLink": {}
-                          }
-                        },
-                        {
-                          "id": "ticket-rate-3",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "Standard DEVCON Rate"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "ticket-rate-2",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "Early Bird Rate"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "ticket-dates-3",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "(1 September&nbsp; - Onwards)"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "ticket-dates-2",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "(29 June - 31 August)"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "ticket-dates-1",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "(28 May - 28 June)"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "ticket-price-1",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "599 €"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "ticket-price-2",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "659 €"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "id": "ticket-price-3",
-                          "value": {
-                            "fragmentLink": {},
-                            "text": {
-                              "value_i18n": {
-                                "en_US": "769 €"
-                              }
+                            "href": {
+                              "value": "https://maps.app.goo.gl/95Z314ZoVtigMkar9"
                             }
                           }
                         }
-                      ],
-                      "indexed": true
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-ticket-prices",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {
+                    "numberOfPrices": 3
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "ticket-rate-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "I Trust You Rate"
+                          }
+                        }
+                      }
                     },
-                    "type": "Fragment"
-                  }
-                ],
-                "type": "Section"
+                    {
+                      "id": "devcon-ticket-prices-header",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "ticket-rate-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Standard DEVCON Rate"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-rate-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Early Bird Rate"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-dates-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "(1 September&nbsp; - Onwards)"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-dates-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "(29 June - 31 August)"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-dates-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "(28 May - 28 June)"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-price-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "599 €"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-price-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "659 €"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-price-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "769 €"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
               }
             ],
             "type": "Section"
