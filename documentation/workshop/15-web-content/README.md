@@ -8,7 +8,8 @@ Learn how you can define Web Content Structures, Templates, Folders and Articles
 
 ## Context
 
-In the context of this demo Web Content can be used for Sponsors section on Home page.
+In the context of this demo Web Content is used for Sponsors section on Home page.
+
 A Sponsor structure should be created with required information, a list of Sponsor articles should be created and displayed in a Collection Display.  
 
 ## Overview
