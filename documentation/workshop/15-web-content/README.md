@@ -172,12 +172,65 @@ _**Note**: use can use [sponsor-structure.xml](../../../exercises/exercise-15/dd
 
 ### 4. Articles Definition
 
-4.1. Copy [documents/group/Sponsors](../../../exercises/exercise-15/documents/group/Sponsors) folder from `exercise-15` to `site-initializer/documents/group` folder in Site Initializer module. 
+4.1. Copy [documents/group/Sponsors](../../../exercises/exercise-15/documents/group/Sponsors) folder from `exercise-15` to `site-initializer/documents/group` folder in Site Initializer module (to define logos for sponsors). 
 
 4.2. Redeploy Site Initializer and run Synchronize. Make sure Sponsors DL Folder is created:
 ![06.png](images/06.png)
 
-3.3. Navigate to Content & Data → Web Content → Templates.
+4.3. Navigate to Content & Data → Web Content → `Sponsors` Journal Folder.
+
+4.4. Create a new `Sponsor` Web Content:
+
+![09.png](images/09.png)
+
+Fill Sponsor information (e.g. for Google Cloud), and publish a web content:
+
+![10.png](images/10.png)
+
+_**Note**: select a `Sponsor Logo` image form the files uploaded in 4.1._
+
+4.5. To obtain the web content definition navigate to the web content and click on ⋮ → View Source:
+
+![11.png](images/11.png)
+
+Copy the XML source displayed:
+
+![12.png](images/12.png)
+
+4.6. Create `google-cloud.xml` web content definition file inside `sponsors` directory, and paste the XML copied above.
+
+4.6. Adjust the XML to clean up environment-specific data.
+
+For the `sponsorLogo` field there is the following JSON definition inside exported XML (for referencing a document from Documents & Media):  
+![13.png](images/13.png)
+
+This JSON needs to be replaced with a document placeholder using `<![CDATA[[$DOCUMENT_JSON:/path-to-document$]]]>` pattern, sample:
+
+`<![CDATA[[$DOCUMENT_JSON:/site-initializer/documents/group/Sponsors/google-cloud.png$]]]>`
+
+4.7. Create `google-cloud.json` web content descriptor file:
+
+```json
+{
+	"articleId": "GOOGLE-CLOUD",
+	"assetCategoryERCs": [
+	],
+	"ddmStructureKey": "SPONSOR",
+	"ddmTemplateKey": "SPONSOR",
+	"folder": "Sponsors",
+	"name": "Google Cloud"
+}
+```
+
+4.8. Repeat steps 4.4. - 4.7. for other Sponsor web contents.
+
+_**Note**: you can also copy already prepared files from [sponsors](../../../exercises/exercise-15/journal-articles/sponsors) folder in `exercise-15`._
+
+4.9. Redeploy Site Initializer and Run Synchronize. Make sure Web Contents are created:
+
+![14.png](images/14.png)
+
+_**Note**: delete manually created Web Contents before synchronization to avoid duplicated content._
 
 ## References
 
