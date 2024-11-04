@@ -8,9 +8,11 @@ Learn how you can define Web Content Structures, Templates, Folders and Articles
 
 ## Context
 
-In the context of this demo Web Content is used for Sponsors section on Home page.
+In the context of this demo Web Content can be used for a Sponsors section on the Home page.
 
-A Sponsor structure should be created with required fields (sponsor name, sponsor type, sponsor logo and sponsor link). A list of Sponsor articles should be created and displayed in a Collection Display.  
+A Sponsor structure can be created with the following fields: sponsor name, sponsor type, sponsor logo and sponsor link. 
+
+A list of Sponsor articles can be displayed in a Collection Display using field mapping on structure fields.  
 
 ## Overview
 
