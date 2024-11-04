@@ -150,7 +150,25 @@ _**Note**: use can use [sponsor-structure.xml](../../../exercises/exercise-15/dd
 
 ### 3. Journal Folder Definition
 
-//todo;
+3.1. Create `journal-articles` directory under [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer)`.
+
+3.2. Copy [sponsors.metadata.json](../../../exercises/exercise-15/journal-articles/sponsors.metadata.json) file to `journal-articles` directory:
+
+```json
+{
+	"description": "Sponsors Journal Folder",
+	"externalReferenceCode": "SPONSORSJOURNALFOLDER",
+	"name": "Sponsors",
+	"viewableBy": "Anyone"
+}
+```
+3.3. Create `sponsors` directory inside `journal-articles`. Put a dummy file inside (e.g. `.gitkeep`) to make it not skipped by Site Initializer.
+
+![07.png](images/07.png)
+
+3.4. Redeploy Site Initializer and run Synchronize.  Navigate to Content & Data → Web Content. Make sure `Sponsors` Journal folder created:
+
+![08.png](images/08.png)
 
 ### 4. Articles Definition
 
