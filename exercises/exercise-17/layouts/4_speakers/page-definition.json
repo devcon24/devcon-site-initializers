@@ -4,7 +4,8 @@
 			{
 				"definition": {
 					"fragmentStyle": {
-						"backgroundColor": "tertiaryStart"
+						"backgroundColor": "tertiaryStart",
+						"minHeight": "100vh"
 					},
 					"indexed": true,
 					"layout": {}
@@ -71,7 +72,11 @@
 													],
 													"displayAllItems": true,
 													"displayAllPages": true,
+													"emptyCollectionConfig": {
+														"displayMessage": false
+													},
 													"layout": {
+														"align": "Center",
 														"flexWrap": "Wrap"
 													},
 													"listItemStyle": "",
@@ -146,7 +151,7 @@
 																				"fragmentImage": {
 																					"url": {
 																						"mapping": {
-																							"fieldKey": "ObjectField_[$OBJECT_NAME:SPEAKER$][$OBJECT_FIELD:profileImage$]#previewURL",
+																							"fieldKey": "ObjectField_58678#previewURL",
 																							"itemReference": {
 																								"contextSource": "CollectionItem"
 																							}

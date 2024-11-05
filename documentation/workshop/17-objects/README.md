@@ -73,7 +73,7 @@ _**Note**: You can export existing Object definition from the Objects list using
 
 3.1. Navigate to Site Builder → Pages and edit the Speakers page.
 
-3.2. Add a wrapping container with `Teriary Start` background color:
+3.2. Add a wrapping container with Min Height=100VH and `Teriary Start` background color:
 
 ![06.png](images/06.png)
 
@@ -109,6 +109,34 @@ _**Note**: You can export existing Object definition from the Objects list using
 ![09.png](images/09.png)
 
 Publish the page.
+
+### 4. Page Definition 
+
+**4.1. Save Fragment Composition.**
+
+Save Fragment Composition for a wrapping container, and export the fragment. 
+Open the `fragment-composition-definition.json` file inside the exported ZIP file.
+
+**4.2. Cleanup JSON** 
+
+Cleanup JSON from environment-specific data:
+- Remove generated `id` elements, e.g. `"id": "a9bb2e5d-0be7-6030-f1fa-6c65277f13e9"`;
+- Use `[$GROUP_KEY$]` placeholder for `siteKey`: replace `"siteKey": "DevCon 2024"` with `"siteKey": "[$GROUP_KEY$]"`
+- Find collection provider definition and replace hard-coded companyId (`91078559743509` below) with `[$COMPANY_ID$]` placeholder:
+```
+"collectionConfig": {
+                      "collectionReference": {
+                        "className": "com.liferay.object.web.internal.info.collection.provider.ObjectEntrySingleFormVariationInfoCollectionProvider_91078559743509_C_Speaker"
+                      },
+                      "collectionType": "CollectionProvider"
+                    },
+```
+
+**4.3. Update Page Definition**
+
+Update `page-definition.json` file for Speakers page using the JSON above: put the JSON inside the root `pageElements` array.
+
+
 
 
 
