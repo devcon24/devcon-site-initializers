@@ -164,6 +164,14 @@ with a custom placeholder:
 
    `"fieldKey": "ObjectField_[$OBJECT_NAME:SPEAKER$][$OBJECT_FIELD:profileImage$]#previewURL",`
 
-2. 
+2. Copy [java](../../../exercises/exercise-17/src/main/java) classes from `exercise-17` to Site Initializer modules (replacing existing ones).
+
+    In updated sources you can see a new method to update an Image Object Field based on custom placeholder:
+
+    ![13.png](images/13.png)
+
+3. Redeploy Site Initializer module, delete `Speaker` Object and run Synchronize. This time mapping should be saved properly, and profile images should be displayed.
+
+With this customization you ensure your solution is environment-agnostic and can be deployed on any server.
 
 [<< 16. Collections](../16-collections/README.md)
