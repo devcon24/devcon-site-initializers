@@ -37,6 +37,12 @@ Object information in the Site Initializer can be defined with the following des
 
 ### 2. Define Object and Object Entries
 
-Todo
+2.1. Copy [object-entries](../../../exercises/exercise-17/object-entries) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
+
+Check the Object Definition in a `speaker-entries.json` descriptor:
+![01.png](images/01.png)
+
+_**Note**: here a Speakers Object is defined with fields: firstName, lastName, position, companyName, profileImage._
+
 
 [<< 16. Collections](../16-collections/README.md)
