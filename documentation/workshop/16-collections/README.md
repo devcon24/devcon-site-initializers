@@ -17,9 +17,7 @@ You can create a collection of entities (e.g. Web Contents of a given Structure)
 
 Collections in Site Initializer are defined in `asset-list-entries.json` descriptor file. 
 The descriptor file may contain multiple collections. 
-For each of them a `title`, `assetEntrySubtypeId` (DDM Structure ID for Web Contents), and `unicodeProperties` (asset query details) are defined, sample:
-
-![01.png](images/01.png)
+For each of them a `title`, `assetEntrySubtypeId` (DDM Structure ID for Web Contents), and `unicodeProperties` (asset query details) are defined.
 
 _Example in Liferay sources: https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/asset-list-entries.json_
 
