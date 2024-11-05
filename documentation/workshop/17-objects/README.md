@@ -29,20 +29,28 @@ Object information in the Site Initializer can be defined with the following des
 
 ### 1. Define Additional Fragments and Documents.
 
-2.1. Copy [devcon-speakers](../../../exercises/exercise-17/fragments/group/devcon/devcon-speakers) and [devcon-speaker-card](../../../exercises/exercise-17/fragments/group/devcon/devcon-speaker-card) fragments from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) (`site-initializer/fragments/group/devcon` folder).
+1.1. Copy [devcon-speakers](../../../exercises/exercise-17/fragments/group/devcon/devcon-speakers) and [devcon-speaker-card](../../../exercises/exercise-17/fragments/group/devcon/devcon-speaker-card) fragments from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) (`site-initializer/fragments/group/devcon` folder).
 
-2.2. Copy [Speakers](../../../exercises/exercise-17/documents/group/Speakers) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) (`site-initializer/documents/group` folder).
+1.2. Copy [Speakers](../../../exercises/exercise-17/documents/group/Speakers) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) (`site-initializer/documents/group` folder).
 
-2.3. Redeploy Site Initializer and run Synchronize. Make sure new fragments and documents created.
+1.3. Redeploy Site Initializer and run Synchronize. Make sure new fragments and documents created.
 
 ### 2. Define Object and Object Entries
 
 2.1. Copy [object-entries](../../../exercises/exercise-17/object-entries) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
 
-Check the Object Definition in a `speaker-entries.json` descriptor:
+Check the Object definition in a `speaker-entries.json` descriptor:
 ![01.png](images/01.png)
 
 _**Note**: here a Speakers Object is defined with fields: firstName, lastName, position, companyName, profileImage._
 
+2.2. Copy [object-entries](../../../exercises/exercise-17/object-entries) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
+
+Check Object Entries definition in a `speaker-entries.json` descriptor:
+![02.png](images/02.png)
+
+_**Note**: For `profileImage` field a Documents & Media document is referenced using `DOCUMENT_FILE_ENTRY_ID` placeholder._
+
+2.3. Redeploy Site Initializer and run Synchronize.
 
 [<< 16. Collections](../16-collections/README.md)
