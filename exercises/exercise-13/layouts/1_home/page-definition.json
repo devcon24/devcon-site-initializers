@@ -1,0 +1,195 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"indexed": true,
+					"layout": {}
+				},
+				"pageElements": [
+					{
+						"definition": {
+							"indexed": true,
+							"layout": {
+								"widthType": "Fixed"
+							}
+						},
+						"pageElements": [
+							{
+								"definition": {
+									"fragment": {
+										"key": "devcon-homepage-banner",
+										"siteKey": "[$GROUP_KEY$]"
+									},
+									"fragmentConfig": {},
+									"fragmentFields": [
+										{
+											"id": "banner-header",
+											"value": {
+												"fragmentLink": {}
+											}
+										},
+										{
+											"id": "banner-link",
+											"value": {
+												"fragmentLink": {
+													"value": {
+														"href": {
+															"value": "/web[$GROUP_FRIENDLY_URL$]/registration"
+														}
+													}
+												}
+											}
+										},
+										{
+											"id": "banner-text",
+											"value": {
+												"fragmentLink": {}
+											}
+										},
+										{
+											"id": "banner-title",
+											"value": {
+												"fragmentLink": {}
+											}
+										}
+									],
+									"indexed": true
+								},
+								"type": "Fragment"
+							},
+							{
+								"definition": {
+									"fragment": {
+										"key": "devcon-ticket-prices",
+										"siteKey": "[$GROUP_KEY$]"
+									},
+									"fragmentConfig": {
+										"numberOfPrices": 3
+									},
+									"fragmentFields": [
+										{
+											"id": "ticket-rate-1",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "I Trust You Rate"
+													}
+												}
+											}
+										},
+										{
+											"id": "devcon-ticket-prices-header",
+											"value": {
+												"fragmentLink": {}
+											}
+										},
+										{
+											"id": "ticket-rate-3",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "Standard DEVCON Rate"
+													}
+												}
+											}
+										},
+										{
+											"id": "ticket-rate-2",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "Early Bird Rate"
+													}
+												}
+											}
+										},
+										{
+											"id": "ticket-dates-3",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "(1 September&nbsp; - Onwards)"
+													}
+												}
+											}
+										},
+										{
+											"id": "ticket-dates-2",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "(29 June - 31 August)"
+													}
+												}
+											}
+										},
+										{
+											"id": "ticket-dates-1",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "(28 May - 28 June)"
+													}
+												}
+											}
+										},
+										{
+											"id": "ticket-price-1",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "599 €"
+													}
+												}
+											}
+										},
+										{
+											"id": "ticket-price-2",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "659 €"
+													}
+												}
+											}
+										},
+										{
+											"id": "ticket-price-3",
+											"value": {
+												"fragmentLink": {},
+												"text": {
+													"value_i18n": {
+														"en_US": "769 €"
+													}
+												}
+											}
+										}
+									],
+									"indexed": true
+								},
+								"type": "Fragment"
+							}
+						],
+						"type": "Section"
+					}
+				],
+				"type": "Section"
+			}
+		],
+		"type": "Root"
+	},
+	"settings": {
+		"masterPage": {
+			"key": "devcon-main"
+		}
+	}
+}
