@@ -94,7 +94,7 @@ Replace it with a `ASSET_LIST_ENTRY_ID` placeholder in format `[#ASSET_LIST_ENTR
 
 4.3. Update `page-definition.json` for the Home page using the exported JSON.
 
-Note: you can use prepared [page-definition.json](../../../exercises/exercise-16/layouts/1_home/page-definition.json) file from `exercise-16`. 
+_**Note**: you can use prepared [page-definition.json](../../../exercises/exercise-16/layouts/1_home/page-definition.json) file from `exercise-16`._ 
 
 4.4. Redeploy Site Initializer and Run Synchronize. Make sure Sponsors section on the Home page is displayed properly.
 
