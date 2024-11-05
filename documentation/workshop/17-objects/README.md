@@ -53,4 +53,16 @@ _**Note**: For `profileImage` field a Documents & Media document is referenced u
 
 2.3. Redeploy Site Initializer and run Synchronize.
 
+2.4. Navigate to Control Panel → Objects. Make sure `Speaker` Object is created:
+
+![03.png](images/03.png)
+
+2.5. Navigate to Site Builder → Speakers (a new menu item should be generated). Make sure `Speakers` entries are created:
+
+![04.png](images/04.png)
+
+_**Note**: You can export existing Object definition from the Objects list using ⋮ → Export Object Definition menu, and then integrate it to Site Initializer._
+
+![05.png](images/05.png)
+
 [<< 16. Collections](../16-collections/README.md)
