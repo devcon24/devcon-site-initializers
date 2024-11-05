@@ -25,7 +25,20 @@ _Example in Liferay sources: https://github.com/liferay/liferay-portal/blob/mast
 
 ## Practice
 
-Todo
+### 1. Collection Definition
+
+1.1. Copy [asset-list-entries.json](../../../exercises/exercise-16/asset-list-entries.json) file from `exercise-16` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
+
+1.2. Analyze the JSON definition.
+
+![02.png](images/02.png)
+_**Note**: here a `[$DDM_STRUCTURE_ID:<STRUCTURE_ID>$]` placeholder is used to get `ddmStructureId` by `ddmStructureKey`: for `assetEntrySubtypeId`, and also in `orderBy` section (to sort articles by `sponsorType` structure field)._
+
+1.3. Redeploy Site Initializer and Run Synchronize.
+
+1.4. Navigate to Site Builder → Collections. Make sure `Sponsors` collection is created:
+
+![03.png](images/03.png)
 
 
 
