@@ -27,6 +27,16 @@ Object information in the Site Initializer can be defined with the following des
 
 ## Practice
 
+### 1. Define Additional Fragments and Documents.
+
+2.1. Copy [devcon-speakers](../../../exercises/exercise-17/fragments/group/devcon/devcon-speakers) and [devcon-speaker-card](../../../exercises/exercise-17/fragments/group/devcon/devcon-speaker-card) fragments from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) (`site-initializer/fragments/group/devcon` folder).
+
+2.2. Copy [Speakers](../../../exercises/exercise-17/documents/group/Speakers) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) (`site-initializer/documents/group` folder).
+
+2.3. Redeploy Site Initializer and run Synchronize. Make sure new fragments and documents created.
+
+### 2. Define Object and Object Entries
+
 Todo
 
 [<< 16. Collections](../16-collections/README.md)
