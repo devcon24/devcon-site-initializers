@@ -30,6 +30,7 @@ _Example in Liferay sources: https://github.com/liferay/liferay-portal/blob/mast
 1.2. Analyze the JSON definition.
 
 ![02.png](images/02.png)
+
 _**Note**: here a `[$DDM_STRUCTURE_ID:<STRUCTURE_ID>$]` placeholder is used to get `ddmStructureId` by `ddmStructureKey`: for `assetEntrySubtypeId`, and also in `orderBy` section (to sort articles by `sponsorType` structure field)._
 
 1.3. Redeploy Site Initializer and Run Synchronize.
