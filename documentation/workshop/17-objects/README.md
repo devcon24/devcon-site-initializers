@@ -136,7 +136,10 @@ Cleanup JSON from environment-specific data:
 
 Update `page-definition.json` file for Speakers page using the JSON above: put the JSON inside the root `pageElements` array.
 
+Redeploy Site Initializer module and run Synchronize. Make sure everything is displayed properly:
 
+![10.png](images/10.png)
 
+### 5. Customization
 
-
+Todo
