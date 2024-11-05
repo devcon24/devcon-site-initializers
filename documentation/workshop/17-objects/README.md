@@ -39,14 +39,14 @@ Object information in the Site Initializer can be defined with the following des
 
 2.1. Copy [object-entries](../../../exercises/exercise-17/object-entries) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
 
-Check the Object definition in a `speaker-entries.json` descriptor:
+Check the Object definition in a `speaker-entries.json` descriptor file:
 ![01.png](images/01.png)
 
 _**Note**: here a Speakers Object is defined with fields: firstName, lastName, position, companyName, profileImage._
 
 2.2. Copy [object-entries](../../../exercises/exercise-17/object-entries) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
 
-Check Object Entries definition in a `speaker-entries.json` descriptor:
+Check Object Entries definition in a `speaker-entries.json` descriptor file:
 ![02.png](images/02.png)
 
 _**Note**: For `profileImage` field a Documents & Media document is referenced using `DOCUMENT_FILE_ENTRY_ID` placeholder._
