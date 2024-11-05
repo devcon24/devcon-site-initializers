@@ -81,5 +81,23 @@ _**Note**: here a `[$DDM_STRUCTURE_ID:<STRUCTURE_ID>$]` placeholder is used to g
 
 3.8. Publish the page.
 
+### 4. Page Definition Updates
+
+4.1. Save the Fragment Composition for the wrapper container, export fragment and open the `fragment-composition-definition.json` file inside the exported ZIP.
+
+4.2. In the exported JSON find a section that corresponds to the `devcon-sponsors-list` fragment. 
+In the collection configuration you can find a hard-coded ID for the `AssetListEntry`:
+
+![05.png](images/05.png)
+
+Replace it with a `ASSET_LIST_ENTRY_ID` placeholder in format `[#ASSET_LIST_ENTRY_ID:<COLLECTION-KEY>#]`, sample: `[#ASSET_LIST_ENTRY_ID:SPONSORS#]`.
+
+4.3. Update `page-definition.json` for the Home page using the exported JSON.
+
+Note: you can use prepared [page-definition.json](../../../exercises/exercise-16/layouts/1_home/page-definition.json) file from `exercise-16`. 
+
+4.4. Redeploy Site Initializer and Run Synchronize. Make sure Sponsors section on the Home page is displayed properly.
+
+![06.png](images/06.png)
 
 [<< 15. Web Content, Structures and Templates](../15-web-content/README.md) | [17. Objects >>](../17-objects/README.md)
