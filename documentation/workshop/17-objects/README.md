@@ -35,6 +35,7 @@ Object information in the Site Initializer can be defined with the following des
 
 1.3. Redeploy Site Initializer and run Synchronize. Make sure new fragments and documents created.
 
+
 ### 2. Define Object and Object Entries
 
 2.1. Copy [object-entries](../../../exercises/exercise-17/object-entries) folder from `exercise-17` to [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer).
@@ -66,3 +67,37 @@ _**Note**: You can export existing Object definition from the Objects list using
 ![05.png](images/05.png)
 
 [<< 16. Collections](../16-collections/README.md)
+
+
+### 3. Displaying Objects
+
+3.1. Navigate to Site Builder → Pages and edit the Speakers page.
+
+3.2. Add a wrapping container with `Teriary Start` background color:
+
+![06.png](images/06.png)
+
+3.3. Add an inner Fixed Width Container. Add the `DevCon Speakers` fragment into the inner Container. Add a Collection Display to a fragment’s DropZone:
+
+![07.png](images/07.png)
+
+3.4. Select the Speakers collection on the Collection Providers tab:
+
+![08.png](images/08.png)
+
+3.5. Add a `DevCon Speaker Card` fragment to the Collection Item, and configure field mapping in the following way:
+
+| Editable Field            | Object Field  |
+|---------------------------|---------------|
+| devcon-speaker-logo       | Preview URL   |
+| devcon-speaker-first-name | First Name    |
+| devcon-speaker-last-name  | Last Name     |
+| devcon-speaker-position   | Position      |
+| devcon-speaker-company    | Company Name  |
+
+
+
+
+
+
+
