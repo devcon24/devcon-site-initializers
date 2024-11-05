@@ -138,9 +138,5 @@ Redeploy Site Initializer module and run Synchronize. Make sure everything is di
 
 ![10.png](images/10.png)
 
-### 5. Customization
-
-Todo
-
 
 [<< 16. Collections](../16-collections/README.md)
