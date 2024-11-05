@@ -66,8 +66,6 @@ _**Note**: You can export existing Object definition from the Objects list using
 
 ![05.png](images/05.png)
 
-[<< 16. Collections](../16-collections/README.md)
-
 
 ### 3. Displaying Objects
 
@@ -143,3 +141,6 @@ Redeploy Site Initializer module and run Synchronize. Make sure everything is di
 ### 5. Customization
 
 Todo
+
+
+[<< 16. Collections](../16-collections/README.md)
