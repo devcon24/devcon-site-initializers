@@ -138,5 +138,18 @@ Redeploy Site Initializer module and run Synchronize. Make sure everything is di
 
 ![10.png](images/10.png)
 
+### 5. Customization
+
+Even thought everything seems working fine so far, there is still one issue with current setup.
+
+If you delete the `Speakers` object, and then run Synchronize again - you'll see that although everything is created properly, the `profileImage` is unmapped:
+
+![11.png](images/11.png)
+
+This happens because there is still hard-coded element: the ID of ObjectField for `profileImage:`
+
+![12.png](images/12.png)
+
+
 
 [<< 16. Collections](../16-collections/README.md)
