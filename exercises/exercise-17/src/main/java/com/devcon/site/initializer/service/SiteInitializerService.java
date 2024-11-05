@@ -7,4 +7,5 @@ public interface SiteInitializerService {
     void verifySiteNavigationMenuIds(long groupId);
 
     void verifyObjectImageFieldsMapping(long groupId);
+
 }

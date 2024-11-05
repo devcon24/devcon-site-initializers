@@ -150,6 +150,20 @@ This happens because there is still hard-coded element: the ID of ObjectField fo
 
 ![12.png](images/12.png)
 
+Unlike regular Object fields referenced by name, `Attachment` fields are referenced by ID for fields mapping.
 
+And, unfortunately, there no placeholder for `OBJECT_FIELD_ID` in Site Initializer.
+
+Thus, this maybe a trigger for customization (at least, until the feature becomes supported natively by the product).
+
+5.1. In the `page-definition.json` replace hard-coded value, e.g.: 
+   
+   `"fieldKey": "ObjectField_58678#previewURL",`
+
+with a custom placeholder: 
+
+   `"fieldKey": "ObjectField_[$OBJECT_NAME:SPEAKER$][$OBJECT_FIELD:profileImage$]#previewURL",`
+
+2. 
 
 [<< 16. Collections](../16-collections/README.md)

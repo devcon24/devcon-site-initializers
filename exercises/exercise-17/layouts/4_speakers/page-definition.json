@@ -151,7 +151,7 @@
 																				"fragmentImage": {
 																					"url": {
 																						"mapping": {
-																							"fieldKey": "ObjectField_58678#previewURL",
+																							"fieldKey": "ObjectField_[$OBJECT_NAME:SPEAKER$][$OBJECT_FIELD:profileImage$]#previewURL",
 																							"itemReference": {
 																								"contextSource": "CollectionItem"
 																							}
