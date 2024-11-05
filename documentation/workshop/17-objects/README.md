@@ -58,7 +58,7 @@ _**Note**: For `profileImage` field a Documents & Media document is referenced u
 
 ![03.png](images/03.png)
 
-2.5. Navigate to Site Builder → Speakers (a new menu item should be generated). Make sure `Speakers` entries are created:
+2.5. Navigate to Site Builder → People → Speakers (a new menu item should be generated). Make sure `Speakers` entries are created:
 
 ![04.png](images/04.png)
 
@@ -95,9 +95,20 @@ _**Note**: You can export existing Object definition from the Objects list using
 | devcon-speaker-position   | Position      |
 | devcon-speaker-company    | Company Name  |
 
+3.6. Define the following configuration for the Collection Display:
 
+| Configuration                  | Value    |
+|--------------------------------|----------|
+| Style Display                  | Flex Row |
+| Flex Wrap                      | Wrap     |
+| Align Items                    | Center   |
+| Justify Content                | Start    |
+| Pagination                     | None     |
+| Display All Collection Items   | true     |
 
+![09.png](images/09.png)
 
+Publish the page.
 
 
 
