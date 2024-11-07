@@ -7,9 +7,9 @@ TEMP_DIRS=(
     "${LIFERAY_HOME}/logs"
     "${LIFERAY_HOME}/osgi/state"
     "${LIFERAY_HOME}/work"
-    "${LIFERAY_HOME}/tomcat-9.0.83/logs"
-    "${LIFERAY_HOME}/tomcat-9.0.83/temp"
-    "${LIFERAY_HOME}/tomcat-9.0.83/work"
+    "${LIFERAY_HOME}/tomcat/logs"
+    "${LIFERAY_HOME}/tomcat/temp"
+    "${LIFERAY_HOME}/tomcat/work"
 )
 
 TEMP_FILES=(
