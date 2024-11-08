@@ -3,7 +3,7 @@
 # Introduction: Site Overview
 
 In this workshop you'll incorporate into a Site Initializer a sample site based on Liferay DevCon 2024 website:
-https://www.liferay.com/it/web/events/devcon-24
+https://www.liferay.com/web/events/devcon-24
 
 In scope of the workshop two pages are implemented:
 
