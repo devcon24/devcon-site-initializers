@@ -8,21 +8,31 @@ Learn how you can initialize content using Site Initializer Client Extensions.
 
 ## Overview 
 
-With [Site Initializer Client Extension](https://learn.liferay.com/w/dxp/liferay-development/importing-exporting-data/using-a-site-initializer-client-extension) you can create a site with predefined content like with OSGi Client Extensions.
+With [Site Initializer Client Extension](https://learn.liferay.com/w/dxp/liferay-development/importing-exporting-data/using-a-site-initializer-client-extension) you can create a site with predefined content like with OSGi Site Initializers.
 
+This approach is uses the same [BundleSiteInitializer](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-extender/site-initializer-extender/src/main/java/com/liferay/site/initializer/extender/internal/BundleSiteInitializer.java) under the hood for content processing, but is SaaS-compatible due to its Client Extension nature.
 
+However, with Site Initializer Client Extension the site is created automatically on deployment: site name specified in configuration. This also means that you can create only one site from such initializer.
 
+Update support is updated by default: on next deployment content for specified site should be updated.
 
 ## Practice
 
-1. Cope all content created in previous exercises from [site-initializer](../../../modules/devcon-site-initializer/src/main/resources/site-initializer) folder in `devcon-site-initializer` folder to [site-initializer](../../../client-extensions/devcon-site-initializer-cx/site-initializer) folder in `devcon-site-initializer-cx` Client Extension.
-
-_**Note**: you can also copy content from Complete Example: [site-initializer](../../complete-example/devcon-site-initializer/src/main/resources/site-initializer)_
+1. Delete `DevCon 2024` site created from Site Initializer.
 
 2. Deploy [devcon-site-initializer-cx](../../../client-extensions/devcon-site-initializer-cx) module.
 
-3. 
+3. Navigate to created `DevCon CX` site: http://localhost:8080/web/devcon-cx
 
+![01.png](images/01.png)
+
+_**Note**: customization introduced for OSGi Site Initializer is not applied here. To achieve the same state you'll need to perform the following steps manually (due to lack of such configuration in Site Initializer):_
+
+_1) Select `DevCon Site Initializer Theme CSS` Theme CSS Client Extension for Layout Set;_
+
+_2) Configure Site Navigation Menus for Header and Footer for `DevCon Main` Master Page;_
+
+_3) Save mapping for Speaker Logo on Speakers page._
 
 
 [README.md](../17-objects/README.md)
