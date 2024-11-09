@@ -10,19 +10,19 @@ Learn how you can initialize content using Site Initializer Client Extensions.
 
 With [Site Initializer Client Extension](https://learn.liferay.com/w/dxp/liferay-development/importing-exporting-data/using-a-site-initializer-client-extension) you can create a site with predefined content like with OSGi Site Initializers.
 
-This approach is uses the same [BundleSiteInitializer](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-extender/site-initializer-extender/src/main/java/com/liferay/site/initializer/extender/internal/BundleSiteInitializer.java) under the hood for content processing, but is SaaS-compatible due to its Client Extension nature.
+This approach uses the same [BundleSiteInitializer](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site-initializer/site-initializer-extender/site-initializer-extender/src/main/java/com/liferay/site/initializer/extender/internal/BundleSiteInitializer.java) under the hood for content processing, but it is SaaS-compatible due to its Client Extension nature.
 
-However, with Site Initializer Client Extension the site is created automatically on deployment: site name specified in configuration. This also means that you can create only one site from such initializer.
+With Site Initializer Client Extension a site is created automatically on deployment: the site name is specified in CX configuration. This also means that you can create only one site from such initializer.
 
-Update support is updated by default: on next deployment content for specified site should be updated.
+Update support is updated by default: on a next deployment the content for specified site should be automatically updated.
 
 ## Practice
 
-1. Delete `DevCon 2024` site created from Site Initializer.
+1. Delete the site created previously from Site Initializer.
 
 2. Deploy [devcon-site-initializer-cx](../../../client-extensions/devcon-site-initializer-cx) module.
 
-3. Navigate to created `DevCon CX` site: http://localhost:8080/web/devcon-cx
+3. Navigate to created `DevCon CX` site (created automatically): http://localhost:8080/web/devcon-cx
 
 ![01.png](images/01.png)
 
