@@ -1,0 +1,251 @@
+{
+  "pageElement": {
+    "pageElements": [
+      {
+        "definition": {
+          "fragment": {
+            "key": "devcon-header",
+            "siteKey": "[$GROUP_KEY$]"
+          },
+          "fragmentConfig": {
+            "headerType": "primary"
+          },
+          "fragmentFields": [
+            {
+              "id": "devcon-registration-link",
+              "value": {
+                "fragmentLink": {
+                  "value": {
+                    "href": {
+                      "value": "/web[$GROUP_FRIENDLY_URL$]/registration"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "id": "devcon-logo",
+              "value": {
+                "fragmentImage": {
+                  "url": {
+                    "value_i18n": {}
+                  }
+                },
+                "fragmentLink": {}
+              }
+            }
+          ],
+          "indexed": true,
+          "widgetInstances": [
+            {
+              "widgetConfig": {
+                "siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_HEADER_NAV_MENU$]",
+                "displayStyle": "ddmTemplate_DEVCON_HEADER_NAV",
+                "displayDepth": "0",
+                "displayStyleGroupKey": "[$GROUP_KEY$]",
+                "siteNavigationMenuType": "-1",
+                "rootMenuItemType": "absolute",
+                "expandedLevels": "auto",
+                "rootMenuItemLevel": "0",
+                "displayStyleGroupId": "[$GROUP_ID$]"
+              },
+              "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+            }
+          ]
+        },
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "fragment": {
+            "key": "devcon-page-wrapper",
+            "siteKey": "[$GROUP_KEY$]"
+          },
+          "fragmentConfig": {},
+          "fragmentFields": [],
+          "indexed": true
+        },
+        "pageElements": [
+          {
+            "definition": {
+              "fragmentDropZoneId": "devcon-homepage-content"
+            },
+            "pageElements": [
+              {
+                "definition": {
+                  "fragmentSettings": {
+                    "unallowedFragments": []
+                  }
+                },
+                "type": "DropZone"
+              }
+            ],
+            "type": "FragmentDropZone"
+          }
+        ],
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "fragment": {
+            "key": "devcon-footer",
+            "siteKey": "[$GROUP_KEY$]"
+          },
+          "fragmentConfig": {},
+          "fragmentFields": [
+            {
+              "id": "devcon-footer-copyright",
+              "value": {
+                "fragmentLink": {}
+              }
+            },
+            {
+              "id": "devcon-logo",
+              "value": {
+                "fragmentImage": {
+                  "url": {
+                    "value_i18n": {}
+                  }
+                },
+                "fragmentLink": {}
+              }
+            }
+          ],
+          "indexed": true,
+          "widgetInstances": [
+            {
+              "widgetConfig": {
+                "siteNavigationMenuId": "[$SITE_NAVIGATION_MENU_ID:DEVCON_FOOTER_NAV_MENU$]",
+                "displayStyle": "ddmTemplate_DEVCON_FOOTER_NAV",
+                "displayDepth": "0",
+                "displayStyleGroupKey": "[$GROUP_KEY$]",
+                "siteNavigationMenuType": "-1",
+                "rootMenuItemType": "absolute",
+                "expandedLevels": "auto",
+                "rootMenuItemLevel": "0",
+                "displayStyleGroupId": "[$GROUP_ID$]"
+              },
+              "widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
+            }
+          ]
+        },
+        "pageElements": [
+          {
+            "definition": {
+              "fragmentDropZoneId": "social-links"
+            },
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-social-media",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {},
+                  "fragmentFields": [
+                    {
+                      "id": "instagram-share-social-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "https://www.instagram.com/liferayinc/"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "github-share-social-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "https://github.com/liferay"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "twitter-share-social-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "https://twitter.com/Liferay"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "facebook-share-social-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "https://www.facebook.com/liferay"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "linkedin-share-social-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "https://www.linkedin.com/company/liferay-inc-"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "youtube-share-social-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "https://www.youtube.com/liferay"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
+              }
+            ],
+            "type": "FragmentDropZone"
+          }
+        ],
+        "type": "Fragment"
+      }
+    ],
+    "type": "Root"
+  },
+  "settings": {
+    "colorSchemeName": "01",
+    "styleBook": {
+      "key": "devcon",
+      "name": "DevCon Stylebook"
+    },
+    "themeCSSClientExtension": {
+      "externalReferenceCode": "LXC:devcon-site-initializer-theme-css",
+      "name": "DevCon Site Initializer Theme CSS"
+    },
+    "themeName": "Dialect",
+    "themeSettings": {
+      "lfr-theme:regular:show-header-search": "false",
+      "lfr-theme:regular:show-header": "false",
+      "lfr-theme:regular:show-footer": "false",
+      "lfr-theme:regular:wrap-widget-page-content": "false"
+    }
+  },
+  "version": 1.1
+}

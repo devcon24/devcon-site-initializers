@@ -1,0 +1,11 @@
+{
+	"pageElement": {
+		"pageElements": [],
+		"type": "Root"
+	},
+	"settings": {
+		"masterPage": {
+			"key": "devcon-main"
+		}
+	}
+}
