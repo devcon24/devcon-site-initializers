@@ -152,7 +152,7 @@ This happens because there is still hard-coded element: the ID of ObjectField fo
 
 Unlike regular Object fields referenced by name, `Attachment` fields are referenced by ID for fields mapping.
 
-And, unfortunately, there no placeholder for `OBJECT_FIELD_ID` in Site Initializer.
+And, unfortunately, there is no placeholder for `OBJECT_FIELD_ID` in Site Initializer.
 
 Thus, this maybe a trigger for customization (at least, until the feature becomes supported natively by the product).
 
