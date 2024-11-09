@@ -35,4 +35,4 @@ _2) Configure Site Navigation Menus for Header and Footer for `DevCon Main` Mast
 _3) Save mapping for Speaker Logo on Speakers page._
 
 
-[README.md](../17-objects/README.md)
+[<< 17. Objects](../17-objects/README.md)
