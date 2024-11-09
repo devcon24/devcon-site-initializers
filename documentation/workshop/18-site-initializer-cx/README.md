@@ -1,6 +1,6 @@
 [Home](../../../README.md) / [Workshop](../README.md) 
 
-# 18. Bonus: Site Initializer Client Extensions
+# Bonus: Site Initializer Client Extensions
 
 ## Goal
 
