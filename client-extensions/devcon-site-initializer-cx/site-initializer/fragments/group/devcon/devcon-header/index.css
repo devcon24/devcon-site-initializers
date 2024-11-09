@@ -1,0 +1,14 @@
+.devcon-header {
+  background-image: linear-gradient(90deg, var(--tertiaryStart), var(--tertiaryEnd));
+  display: flex;
+  min-height: 72px;
+}
+.devcon-header__logo img {
+  max-width: 200px;
+}
+.devcon-header--secondary .devcon-header__logo {
+  margin: 1rem auto;
+}
+.devcon-header--secondary .devcon-header__logo img {
+  max-width: 400px;
+}

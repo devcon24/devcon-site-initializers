@@ -1,0 +1,6 @@
+{
+  "className": "com.liferay.portal.kernel.theme.NavItem",
+  "ddmTemplateKey": "DEVCON_HEADER_NAV",
+  "name": "DevCon Header Navigation",
+  "resourceClassName": "com.liferay.portlet.display.template.PortletDisplayTemplate"
+}

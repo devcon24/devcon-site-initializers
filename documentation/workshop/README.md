@@ -37,3 +37,5 @@
 [16. Collections](16-collections/README.md)
 
 [17. Objects](17-objects/README.md)
+
+[Bonus: Site Initializer Client Extensions](18-site-initializer-cx/README.md)

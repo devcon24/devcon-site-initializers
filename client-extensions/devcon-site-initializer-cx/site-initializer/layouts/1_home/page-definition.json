@@ -1,0 +1,478 @@
+{
+  "pageElement": {
+    "pageElements": [
+      {
+        "definition": {
+          "indexed": true,
+          "layout": {}
+        },
+        "pageElements": [
+          {
+            "definition": {
+              "indexed": true,
+              "layout": {
+                "widthType": "Fixed"
+              }
+            },
+            "pageElements": [
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-homepage-banner",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {},
+                  "fragmentFields": [
+                    {
+                      "id": "banner-header",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "banner-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "/web[$GROUP_FRIENDLY_URL$]/registration"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "banner-text",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "banner-title",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-gallery",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {
+                    "numberOfImages": 4
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "gallery-image-4",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-04.png#]"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "gallery-image-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-03.png#]"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "gallery-image-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-02.png#]"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "gallery-image-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "mapping": {
+                            "fieldKey": "FileEntry_fileURL",
+                            "itemReference": {
+                              "className": "com.liferay.portal.kernel.repository.model.FileEntry",
+                              "classPK": "[#DOCUMENT_FILE_ENTRY_ID:/site-initializer/documents/group/Gallery/gallery-01.png#]"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-venue",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {},
+                  "fragmentFields": [
+                    {
+                      "id": "devcon-venue-header",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-subheader",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-address",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-image",
+                      "value": {
+                        "fragmentImage": {
+                          "url": {
+                            "value_i18n": {
+                              "en_US": "[$DOCUMENT_URL:/site-initializer/documents/group/Venue/venue-01.png$]"
+                            }
+                          }
+                        },
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "devcon-venue-link",
+                      "value": {
+                        "fragmentLink": {
+                          "value": {
+                            "href": {
+                              "value": "https://maps.app.goo.gl/95Z314ZoVtigMkar9"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-ticket-prices",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {
+                    "numberOfPrices": 3
+                  },
+                  "fragmentFields": [
+                    {
+                      "id": "ticket-rate-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "I Trust You Rate"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "devcon-ticket-prices-header",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    },
+                    {
+                      "id": "ticket-rate-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Standard DEVCON Rate"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-rate-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "Early Bird Rate"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-dates-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "(1 September&nbsp; - Onwards)"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-dates-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "(29 June - 31 August)"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-dates-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "(28 May - 28 June)"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-price-1",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "599 €"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-price-2",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "659 €"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": "ticket-price-3",
+                      "value": {
+                        "fragmentLink": {},
+                        "text": {
+                          "value_i18n": {
+                            "en_US": "769 €"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "type": "Fragment"
+              },
+              {
+                "definition": {
+                  "fragment": {
+                    "key": "devcon-sponsors",
+                    "siteKey": "[$GROUP_KEY$]"
+                  },
+                  "fragmentConfig": {},
+                  "fragmentFields": [
+                    {
+                      "id": "devcon-sponsors-header",
+                      "value": {
+                        "fragmentLink": {}
+                      }
+                    }
+                  ],
+                  "indexed": true
+                },
+                "pageElements": [
+                  {
+                    "definition": {
+                      "fragmentDropZoneId": "devcon-sponsors-list"
+                    },
+                    "pageElements": [
+                      {
+                        "definition": {
+                          "collectionConfig": {
+                            "collectionReference": {
+                              "className": "com.liferay.asset.list.model.AssetListEntry",
+                              "classPK": "[#ASSET_LIST_ENTRY_ID:SPONSORS#]"
+                            },
+                            "collectionType": "Collection"
+                          },
+                          "collectionViewports": [
+                            {
+                              "collectionViewportDefinition": {
+                                "numberOfColumns": 1
+                              },
+                              "id": "landscapeMobile"
+                            },
+                            {
+                              "collectionViewportDefinition": {
+                                "numberOfColumns": 1
+                              },
+                              "id": "portraitMobile"
+                            },
+                            {
+                              "collectionViewportDefinition": {
+                                "numberOfColumns": 1
+                              },
+                              "id": "tablet"
+                            }
+                          ],
+                          "displayAllItems": true,
+                          "displayAllPages": true,
+                          "layout": {
+                            "justify": "SpaceAround"
+                          },
+                          "listItemStyle": "",
+                          "listStyle": "flex-row",
+                          "numberOfColumns": 1,
+                          "numberOfItems": 5,
+                          "numberOfItemsPerPage": 20,
+                          "numberOfPages": 5,
+                          "paginationType": "None",
+                          "showAllItems": false,
+                          "templateKey": ""
+                        },
+                        "pageElements": [
+                          {
+                            "definition": {
+                              "collectionItemConfig": {}
+                            },
+                            "pageElements": [
+                              {
+                                "definition": {
+                                  "fragment": {
+                                    "key": "devcon-sponsor-icon",
+                                    "siteKey": "[$GROUP_KEY$]"
+                                  },
+                                  "fragmentConfig": {},
+                                  "fragmentFields": [
+                                    {
+                                      "id": "sponsor-image",
+                                      "value": {
+                                        "fragmentImage": {
+                                          "url": {
+                                            "mapping": {
+                                              "fieldKey": "DDMStructure_sponsorLogo",
+                                              "itemReference": {
+                                                "contextSource": "CollectionItem"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "fragmentLink": {
+                                          "value": {
+                                            "href": {
+                                              "mapping": {
+                                                "fieldKey": "DDMStructure_sponsorLink",
+                                                "itemReference": {
+                                                  "contextSource": "CollectionItem"
+                                                }
+                                              }
+                                            },
+                                            "target": "Blank"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "id": "sponsor-level",
+                                      "value": {
+                                        "fragmentLink": {
+                                          "value": {
+                                            "href": {
+                                              "mapping": {
+                                                "fieldKey": "DDMStructure_sponsorLink",
+                                                "itemReference": {
+                                                  "contextSource": "CollectionItem"
+                                                }
+                                              }
+                                            },
+                                            "target": "Blank"
+                                          }
+                                        },
+                                        "text": {
+                                          "mapping": {
+                                            "fieldKey": "DDMStructure_sponsorType",
+                                            "itemReference": {
+                                              "contextSource": "CollectionItem"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "indexed": true
+                                },
+                                "type": "Fragment"
+                              }
+                            ],
+                            "type": "CollectionItem"
+                          }
+                        ],
+                        "type": "Collection"
+                      }
+                    ],
+                    "type": "FragmentDropZone"
+                  }
+                ],
+                "type": "Fragment"
+              }
+            ],
+            "type": "Section"
+          }
+        ],
+        "type": "Section"
+      }
+    ],
+    "type": "Root"
+  },
+  "settings": {
+    "masterPage": {
+      "key": "devcon-main"
+    }
+  }
+}

@@ -2,7 +2,7 @@ liferay-learn-site-initializer:
     name: DevCon Site Initializer CX
     oAuthApplicationHeadlessServer: devcon-site-initializer-cx-oauth-application-headless-server
     siteExternalReferenceCode: DEVCON
-    siteName: DevCon
+    siteName: DevCon CX
     type: siteInitializer
 devcon-site-initializer-cx-oauth-application-headless-server:
     .serviceAddress: localhost:8080

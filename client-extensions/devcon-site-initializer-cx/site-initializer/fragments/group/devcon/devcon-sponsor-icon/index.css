@@ -1,0 +1,12 @@
+.devcon-sponsor-icon {
+  padding: 2rem;
+  text-align: center;
+}
+.devcon-sponsor-icon__logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+.devcon-sponsor-icon__level a {
+  color: inherit;
+  text-decoration: none;
+}

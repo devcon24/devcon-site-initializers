@@ -1,0 +1,80 @@
+{
+  "name": "Speaker",
+  "label": {
+    "en_US": "Speaker"
+  },
+  "pluralLabel": {
+    "en_US": "Speakers"
+  },
+  "externalReferenceCode": "SPEAKER",
+  "scope": "site",
+  "panelCategoryKey": "site_administration.members",
+  "objectFields": [
+    {
+      "DBType": "String",
+      "indexed": false,
+      "indexedAsKeyword": false,
+      "label": {
+        "en_US": "First Name"
+      },
+      "name": "firstName",
+      "required": false
+    },
+    {
+      "DBType": "String",
+      "indexed": false,
+      "indexedAsKeyword": false,
+      "label": {
+        "en_US": "Last Name"
+      },
+      "name": "lastName",
+      "required": false
+    },
+    {
+      "DBType": "String",
+      "indexed": false,
+      "indexedAsKeyword": false,
+      "label": {
+        "en_US": "Position"
+      },
+      "name": "position",
+      "required": false
+    },
+    {
+      "DBType": "String",
+      "indexed": false,
+      "indexedAsKeyword": false,
+      "label": {
+        "en_US": "Company Name"
+      },
+      "name": "companyName",
+      "required": false
+    },
+    {
+      "indexed": false,
+      "DBType": "Long",
+      "label": {
+        "en_US": "Profile Image"
+      },
+      "type": "Long",
+      "required": false,
+      "externalReferenceCode": "profileImage",
+      "name": "profileImage",
+      "businessType": "Attachment",
+      "objectFieldSettings": [
+        {
+          "name": "acceptedFileExtensions",
+          "value": "jpeg, jpg, pdf, png"
+        },
+        {
+          "name": "maximumFileSize",
+          "value": 100
+        },
+        {
+          "name": "fileSource",
+          "value": "documentsAndMedia"
+        }
+      ]
+    }
+  ]
+}

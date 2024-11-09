@@ -1,0 +1,30 @@
+<div class="devcon-header [#if configuration.headerType == 'secondary']devcon-header--secondary[/#if]">
+	<div class="container d-flex justify-content-between align-items-center">
+
+		<!-- Logo  -->
+		<div class="devcon-header__logo">
+			<a href="/web${themeDisplay.scopeGroup.friendlyURL}">
+				<img src="[resources:devcon-header-logo.png]" alt="DevCon Logo"
+					 data-lfr-editable-type="image"
+					 data-lfr-editable-id="devcon-logo"
+				/>
+			</a>
+		</div>
+
+		[#if configuration.headerType == 'primary']
+			<!-- Navigation & Registration -->
+			<div class="d-flex p-1 align-items-center">
+				<div class="devcon-header__navigation">
+					<lfr-widget-nav></lfr-widget-nav>
+				</div>
+				<a data-lfr-editable-id="devcon-registration-link"
+				   data-lfr-editable-type="link"
+				   class="btn btn-primary devcon-header__button"
+				   href="/web${themeDisplay.scopeGroup.friendlyURL}/registration">
+					Register
+				</a>
+			</div>
+		[/#if]
+
+	</div>
+</div>

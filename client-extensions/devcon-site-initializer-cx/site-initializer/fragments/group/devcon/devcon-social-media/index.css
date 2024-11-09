@@ -1,0 +1,18 @@
+.social-media-icons {
+  width: auto;
+  text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box !important;
+  font: 400 16px/1.5 'Source Sans Pro', Tahoma, 'Trebuchet MS', sans-serif;
+}
+
+.social-media-icons .osb-icon {
+  color: var(--white);
+  margin: 0 0.625rem;
+  transform: scale(1.25);
+  fill: currentColor;
+  height: 1.5rem;
+  width: 1.5rem;
+  overflow: hidden;
+  vertical-align: middle;
+}

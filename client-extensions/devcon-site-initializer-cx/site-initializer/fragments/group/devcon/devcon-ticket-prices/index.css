@@ -1,0 +1,12 @@
+.devcon-ticket-prices__section {
+  background-color: rgba(255, 255, 255, 0.1607843137) !important;
+}
+.devcon-ticket-prices__title {
+  font-size: 3.438rem;
+  line-height: 1.018;
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+}
+.devcon-ticket-prices__dates {
+  margin-bottom: 1.5rem !important;
+}

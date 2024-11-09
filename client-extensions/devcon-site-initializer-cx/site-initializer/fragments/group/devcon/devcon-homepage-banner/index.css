@@ -1,0 +1,13 @@
+.devcon-homepage-banner {
+  background: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  border-radius: inherit;
+  margin: 0 auto;
+  padding-bottom: var(--spacer-4, 3rem) !important;
+  padding-top: var(--spacer-9, 9rem) !important;
+}
+.devcon-homepage-banner__header {
+  font-size: 6.688rem;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root available-locales="en_US" default-locale="en_US" version="1.0">
+    <dynamic-element index-type="keyword" instance-id="6rQhTN56" name="sponsorName" type="text">
+        <dynamic-content language-id="en_US"><![CDATA[Webtown]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element index-type="keyword" instance-id="K0qOCQsC" name="sponsorType" type="select">
+        <dynamic-content language-id="en_US"><![CDATA[platinum]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element index-type="text" instance-id="QZtTweia" name="sponsorLogo" type="image">
+		<dynamic-content language-id="en_US">
+            <![CDATA[[$DOCUMENT_JSON:/site-initializer/documents/group/Sponsors/webtown.png$]]]>
+		</dynamic-content>
+    </dynamic-element>
+    <dynamic-element index-type="keyword" instance-id="bGEkcf9o" name="sponsorLink" type="text">
+        <dynamic-content language-id="en_US"><![CDATA[https://webtown-group.com/]]></dynamic-content>
+    </dynamic-element>
+</root>
