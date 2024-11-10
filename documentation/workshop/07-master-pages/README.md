@@ -86,3 +86,5 @@ For each Master Page a subdirectory should be created with three files:
 ![02.png](images/02.png)
 
 [<< 6. Fragments](../06-fragments/README.md) | [8. Master Pages Content >> ](../08-master-pages-content/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

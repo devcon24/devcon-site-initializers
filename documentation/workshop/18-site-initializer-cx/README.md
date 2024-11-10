@@ -36,3 +36,5 @@ _3) Save mapping for Speaker Logo on Speakers page._
 
 
 [<< 17. Objects](../17-objects/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

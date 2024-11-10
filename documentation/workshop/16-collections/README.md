@@ -101,3 +101,5 @@ _**Note**: you can use prepared [page-definition.json](../../../exercises/exerci
 ![06.png](images/06.png)
 
 [<< 15. Web Content, Structures and Templates](../15-web-content/README.md) | [17. Objects >>](../17-objects/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

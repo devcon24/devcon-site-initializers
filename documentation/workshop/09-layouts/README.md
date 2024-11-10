@@ -72,3 +72,5 @@ The Home and Speakers ones will be used for content setup later on, other ones -
 
 
 [<< 8. Master Pages Content](../08-master-pages-content/README.md) | [10. Widget Templates >>](../10-widget-templates/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

@@ -116,3 +116,5 @@ But the problem here is missing placeholder for it. Even in Liferay sources in s
 In the next chapter you'll see how you can customize the site initializing process to workaround issues like this.
 
 [10. Widget Templates](../10-widget-templates/README.md) | [12. Customization](../12-customization/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

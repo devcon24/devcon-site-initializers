@@ -101,3 +101,5 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/mas
 9. Check Master Pages, make sure they remain the same after applying changes from Site Initializer.
 
 [<< 7. Master Pages](../07-master-pages/README.md) | [9. Pages Definition >>](../09-layouts/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

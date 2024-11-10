@@ -52,3 +52,5 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
 ![02.png](images/02.png)
 
 [<< 1. Module Setup](../01-module-setup/README.md) | [3. Update Support >>](../03-update-support/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

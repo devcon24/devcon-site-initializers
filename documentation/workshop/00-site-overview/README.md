@@ -40,3 +40,5 @@ The Speakers page should have just one component:
 And now let's start the Site Initializer journey!
 
 [1. Module Setup >>](../01-module-setup/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

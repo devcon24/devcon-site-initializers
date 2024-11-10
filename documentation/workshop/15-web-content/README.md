@@ -242,3 +242,5 @@ _Examples in Liferay sources:_
 
 
 [<< 14. Documents](../14-documents/README.md) | [16. Collections >>](../16-collections/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

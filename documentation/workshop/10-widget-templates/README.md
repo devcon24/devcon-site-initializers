@@ -105,3 +105,5 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/tree/mas
     _**Note:** some changes like this might not be propagated with Synchronize feature, in such cases site recreation might be needed._
 
 [<< 9. Pages Definition](../09-layouts/README.md) | [11. Navigation Menus >>](../11-navigation-menus/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved

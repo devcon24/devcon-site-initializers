@@ -175,3 +175,5 @@ with a custom placeholder:
 With this customization you ensure your solution is environment-agnostic and can be deployed on any server.
 
 [<< 16. Collections](../16-collections/README.md) | [Bonus: Site Initializer Client Extensions >>](../18-site-initializer-cx/README.md)
+
+###### © Vitaliy Koshelenko 2024 | All rights reserved
