@@ -17,4 +17,12 @@
 | `[$DDM_STRUCTURE_ID: <ddm-structure-key>]` | DDM Structure ID by DDM Structure Key                          | `[$DDM_STRUCTURE_ID:SPONSOR$]`                                                                                                                            | [Link](https://github.com/liferay/liferay-portal/blob/7.4.3.125-ga125/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/asset-list-entries.json#L3)                                                |
 | `[#ASSET_LIST_ENTRY_ID: collection-key>#]` | Collection ID `assetListEntryId` by Collection Key             | `[#ASSET_LIST_ENTRY_ID:SPONSORS#]`                                                                                                                        | [Link](https://github.com/liferay/liferay-portal/blob/7.4.3.125-ga125/modules/apps/site-initializer/site-initializer-masterclass/src/main/resources/site-initializer/layouts/blog/page-definition.json#L40)                                     |
 
+### Useful Links
+
+##### [Introducing Site Initializers: Bundle Site Initializers](https://liferay.dev/blogs/-/blogs/introducing-site-initializers)
+
+##### [Site Initializers: Update Support](https://liferay.dev/blogs/-/blogs/site-initializers-update-support)
+
+#
+
 ###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved
