@@ -83,4 +83,4 @@ _**Note**: you can use prepared [page-definition.json](../../../exercises/exerci
 
 [12. Customization](../12-customization/README.md) | [14. Documents](../14-documents/README.md) 
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

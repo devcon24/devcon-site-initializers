@@ -117,4 +117,4 @@ In the next chapter you'll see how you can customize the site initializing proce
 
 [10. Widget Templates](../10-widget-templates/README.md) | [12. Customization](../12-customization/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

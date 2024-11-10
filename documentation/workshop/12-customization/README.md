@@ -70,4 +70,4 @@ public class SynchronizeSiteInitializerMVCActionCommandOverride extends BaseMVCA
 
 [<< 11. Navigation Menus](../11-navigation-menus/README.md) | [13. Page Content >>](../13-page-content/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

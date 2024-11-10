@@ -66,4 +66,4 @@ The `frontend-tokens-values.json` file contains values for Style Book, for token
 
 [<< 4. Styling and Branding](../04-styling-branding/README.md) | [6. Fragments >>](../06-fragments/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

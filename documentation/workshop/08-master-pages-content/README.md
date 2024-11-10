@@ -102,4 +102,4 @@ _Example in Liferay sources:_ https://github.com/liferay/liferay-portal/blob/mas
 
 [<< 7. Master Pages](../07-master-pages/README.md) | [9. Pages Definition >>](../09-layouts/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

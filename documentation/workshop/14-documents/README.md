@@ -91,4 +91,4 @@ Note: you can use prepared [page-definition.json](../../../exercises/exercise-14
 
 [<< 13. Page Content](../13-page-content/README.md) | [15. Web Content, Structures and Templates >>](../15-web-content/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

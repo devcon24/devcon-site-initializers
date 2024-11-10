@@ -12,4 +12,4 @@ Navigate to Complete Example to see Site Initializer in action.
 
 Navigate to References for useful tips on site initialization process.
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

@@ -49,4 +49,4 @@ A blank site should be created, considering there are no content descriptors for
 
 [<< Introduction: Site Overview](../00-site-overview/README.md) | [2. Layout Set Configuration >>](../02-layout-set/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

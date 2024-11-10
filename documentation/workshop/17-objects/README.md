@@ -176,4 +176,4 @@ With this customization you ensure your solution is environment-agnostic and can
 
 [<< 16. Collections](../16-collections/README.md) | [Bonus: Site Initializer Client Extensions >>](../18-site-initializer-cx/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

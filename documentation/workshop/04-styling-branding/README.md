@@ -62,4 +62,4 @@ This way you have created a relation between the LayoutSet and the Client Extens
 
 [<< 3. Update Support](../03-update-support/README.md) | [5. Style Books >>](../05-style-books/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

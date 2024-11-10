@@ -55,4 +55,4 @@ Each fragment is defined in a separate folder and has a descriptor file `fragmen
 
 [<< 5. Style Books](../05-style-books/README.md) | [7. Master Pages >>](../07-master-pages/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved

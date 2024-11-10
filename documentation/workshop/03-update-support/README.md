@@ -38,4 +38,4 @@ _Blog link:_
 
 [<< 2. Layout Set Configuration](../02-layout-set/README.md) | [4. Styling and Branding >>](../04-styling-branding/README.md)
 
-###### © Vitaliy Koshelenko 2024 | All rights reserved
+###### © [Vitaliy Koshelenko](https://www.linkedin.com/in/vitaliy-koshelenko) 2024 | All rights reserved
