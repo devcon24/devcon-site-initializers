@@ -6,7 +6,7 @@
 
 ### [1. Module Setup](01-module-setup/README.md)
 
-### [2. Layout Set](02-layout-set/README.md)
+### [2. Layout Set Configuration](02-layout-set/README.md)
 
 ### [3. Update Support](03-update-support/README.md)
 
