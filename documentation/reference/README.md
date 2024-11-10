@@ -1,6 +1,6 @@
 [Home](../../README.md)
 
-# Site Initializers: Reference
+# Site Initializers: References
 
 ### Placeholders
 
