@@ -19,6 +19,12 @@
 
 ### Useful Links
 
+#### Presentation
+
+##### [Site Initializers](https://docs.google.com/presentation/d/1YtZzuYP_KqEL5KYPnpQ40HUZZWTeDCEp/edit?usp=sharing&ouid=108348293716646077592&rtpof=true&sd=true)
+
+#### Blogs
+
 ##### [Introducing Site Initializers: Bundle Site Initializers](https://liferay.dev/blogs/-/blogs/introducing-site-initializers)
 
 ##### [Site Initializers: Update Support](https://liferay.dev/blogs/-/blogs/site-initializers-update-support)
